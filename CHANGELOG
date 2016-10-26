@@ -1,0 +1,12 @@
+1.0.7 -> 1.0.8
+fixed a bug where no tracking request was send on data-redirect
+add factfinder.communication.version
+
+1.0.6 -> 1.0.7
+fixed onerror-image uncaught exception
+
+1.0.5 -> 1.0.6
+Renamed shadow dom css class from container to ff-asn-group-container due to polyfill lack of scoping
+Add removeUnresolvedAttribute behavior. It's now possible to prevent FOUC with the [unresovled] attribute on all ff-* elements with visual component
+[data-image] attribute is now automatically resolved with the appropriate fieldRole value if possible
+ff-sortbox does not change the key anymore when showSelected is true (currentKey + "_showSelected")
