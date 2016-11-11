@@ -1,3 +1,7 @@
+1.0.8 -> 1.0.9
+ff-asn does now set style="display:none;" at creation time
+fixed search-immediate error again
+
 1.0.7 -> 1.0.8
 fixed a bug where no tracking request was send on data-redirect
 add factfinder.communication.version
