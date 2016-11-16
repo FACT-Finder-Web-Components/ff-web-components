@@ -1,3 +1,9 @@
+1.0.10 -> 1.0.11
+fixed umlaut encoding bug in suggest searchTerms
+
+1.0.9 -> 1.0.10
+fixed: search-immediate wasn't occasionally executed in Internet Explorer
+
 1.0.8 -> 1.0.9
 ff-asn does now set style="display:none;" at creation time
 fixed search-immediate error again
