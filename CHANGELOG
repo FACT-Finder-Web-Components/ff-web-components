@@ -1,3 +1,9 @@
+1.0.12
+ff-campaign-advisor bugfix: The ff-campaign-advisor-questions contains now the ff-campaign-advisor-answer as it should be. Therefore the ff-campaign-advisor element is now able to process more than 1 advisor question.
+add use-browser-history="true/false" to <ff-communication>
+add use-url-parameter="true/false" to <ff-communication>
+minor improvements
+
 1.0.10 -> 1.0.11
 fixed umlaut encoding bug in suggest searchTerms
 
