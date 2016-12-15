@@ -1,3 +1,9 @@
+1.0.14
+ff-searchbox: fixed on key left right console error when no ff-suggest available
+ff-communication: fixed encoding issue when use-seo was set to true
+ff-campaign-advisor: fixed polyfill related display bug which caused the advisor question not to show up occasionally in firefox and IE
+ff-communication: fixed a bug where setting the version attribute to 7.2 resulted in console log: version ont supported
+
 1.0.12
 ff-campaign-advisor bugfix: The ff-campaign-advisor-questions contains now the ff-campaign-advisor-answer as it should be. Therefore the ff-campaign-advisor element is now able to process more than 1 advisor question.
 add use-browser-history="true/false" to <ff-communication>
