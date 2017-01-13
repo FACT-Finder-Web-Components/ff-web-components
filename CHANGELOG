@@ -1,3 +1,9 @@
+1.0.15
+ff-communiction: fixed search-immediate always true when use-seo="true"
+ff-slider: fixed encoding issue
+ff-breadcrumb-trail-item: does now reflect type attribute
+fixed tracking 401 bug
+
 1.0.14
 ff-searchbox: fixed on key left right console error when no ff-suggest available
 ff-communication: fixed encoding issue when use-seo was set to true
