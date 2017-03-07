@@ -1,3 +1,16 @@
+1.1.3
+ADD shopping cart campaign API element (ff-campaign-shopping-cart)
+ADD ff-tag-cloud
+ADD lazy-load for ff-asn-group
+ADD ff-compare element
+ADD factfinder.communication.FFCommunicationEventAggregator.addBeforeDispatchingCallback(fn)
+
+1.1.0
+ADD: ff-search-feedback element
+ADD: ff-campaign-landing-page element
+ADD: ff-navigation element
+ADD: ff-header-navigation element
+
 1.0.16
 fix: console error log on tracking request
 fix: recommendation are not displayed
