@@ -15,10 +15,6 @@ If you don't have bower installed follow this instructions, otherwise continue w
 For a complete bower.json example see [ff-web-components-demos](https://github.com/FACT-Finder/ff-web-components-demos)
 
 ###Option 2 (Without using bower)
-1. Download a release version of the repository [Releases](https://github.com/FACT-Finder/ff-web-components/releases)
+1. Download a release version of the repository [Releases](https://github.com/FACT-Finder/ff-web-components/releases) OR Download it from [web-components.fact-finder.de](http://web-components.fact-finder.de/download)
 2. Unzip the file
-3. Unzip the release-zip file wherever you need it
-
-OR
-
-Download it from [web-components.fact-finder.de](http://web-components.fact-finder.de/download)
+3. Unzip the release-zip (bower_components.zip) file wherever you need it
