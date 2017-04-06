@@ -1,3 +1,17 @@
+CHG: removed blank between numerical values of slider filter values as the FF-UI diagnostic search can't handle them
+CHG: change ff-paging inheritance behavior for showOnly property
+FIX: init of ff-asn-group template in ff-asn and asn-group-element template upgrading in ff-asn-group
+FIX: ff-asn-group-slider are always shown
+CHG: add lazy-rendering for detailedLinks in asn-group
+ADD: ff-communication does now send login event when user-id attribute changes. If set, all tracking requests will have the userId as an additional parameter
+ADD: ff-communication add sid attribute
+CHG: campaign dispatching dose not dispatch 'undefined' to campaigns which are affected.
+FIX: set asn-group element 'opened' when group has a selectedElement in searchResult
+
+1.1.5
+FIX: shoppingCartCampaign dispatching bug
+ADD: ff-search-feedback dont-sho-on-result-changed attribute
+
 1.1.4
 FIX: fix suggest 401 bug
 FIX: ff-tag-cloud double encoding bug
