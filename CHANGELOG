@@ -1,3 +1,4 @@
+1.1.6
 CHG: removed blank between numerical values of slider filter values as the FF-UI diagnostic search can't handle them
 CHG: change ff-paging inheritance behavior for showOnly property
 FIX: init of ff-asn-group template in ff-asn and asn-group-element template upgrading in ff-asn-group
