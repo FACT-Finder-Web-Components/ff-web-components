@@ -1,3 +1,6 @@
+1.1.7
+FIX: ff-asn crashs without configured slider
+
 1.1.6
 CHG: removed blank between numerical values of slider filter values as the FF-UI diagnostic search can't handle them
 CHG: change ff-paging inheritance behavior for showOnly property
