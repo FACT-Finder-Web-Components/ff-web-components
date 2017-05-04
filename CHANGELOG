@@ -1,3 +1,6 @@
+1.1.8
+FIX: fix a bug where in Safari 10.1 ff-asn-groups collapse and are not openable
+
 1.1.7
 FIX: ff-asn crashs without configured slider
 
