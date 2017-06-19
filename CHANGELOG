@@ -1,3 +1,6 @@
+1.1.10
+FIX: Overriding the default action of the ff-suggest-item click
+
 1.1.9
 FIX: add fallback for not supported localStorage in Safari inkognito mode
 
