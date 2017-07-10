@@ -1,3 +1,24 @@
+1.2.0
+ADD: ff-slider-control introduces new mixins
+ADD: ff-paging-item does now set the css class disabled when it is not active
+FIX: fixed a bug for ff-record data-redirect where some data-redirect targets other than _self could lead to flaky click tracking
+FIX: pushed wrong url to browser history when using a html <base> tag
+ADD: ff-paging-dropdown element
+ADD: Backwards compatibility for FF < 7.3 and "productName" ff-suggest-item click
+FIX: broken layout of container in ff-header-navigation
+ADD: add "ff-asn-remove-all-filter" element
+ADD: suggest-product-record event to ff-suggest which contains the product fetched by the REST call on a suggest productName click
+ADD: ff-suggest-item uses the REST get records API to fetch a product on a suggest productName click
+ADD: getRecordsUrl property on ff-communication
+CHG: core Dispatcher and custom topics
+FIX: ignore 'ignorePage' lazy check on searchImmediate
+CHG: core Distapcher and custom topics
+ADD: infinite scrolling to ff-record-list
+CHG: add dynamic slots and change the layout of the container in ff-header-navigation
+CHG: don't dispatch asn on a sort, paging or ppp event
+ADD: add custom urls to ff-communication
+FIX: ASN filter did not consider the ClusterLevel of an element
+
 1.1.10
 FIX: Overriding the default action of the ff-suggest-item click
 
@@ -59,10 +80,11 @@ ff-communication: fixed encoding issue when use-seo was set to true
 ff-campaign-advisor: fixed polyfill related display bug which caused the advisor question not to show up occasionally in firefox and IE
 ff-communication: fixed a bug where setting the version attribute to 7.2 resulted in console log: version ont supported
 
+
 1.0.12
 ff-campaign-advisor bugfix: The ff-campaign-advisor-questions contains now the ff-campaign-advisor-answer as it should be. Therefore the ff-campaign-advisor element is now able to process more than 1 advisor question.
-add use-browser-history="true/false" to <ff-communication>
-add use-url-parameter="true/false" to <ff-communication>
+add use-browser-history="true/false" to ff-communication
+add use-url-parameter="true/false" to ff-communication
 minor improvements
 
 1.0.10 -> 1.0.11
