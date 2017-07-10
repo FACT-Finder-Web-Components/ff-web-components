@@ -313,18 +313,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <content></content>
     </template>
 </dom-module>
-<dom-module id="ff-paging-set" assetpath="bower_components/fact-finder-custom-elements/dist/ff-paging-set/">
-    <style>:host{display:inline-block;}</style>
-    <template>
-        <content></content>
-    </template>
-</dom-module>
 <dom-module id="ff-paging-item" assetpath="bower_components/fact-finder-custom-elements/dist/ff-paging-item/">
     <style>:host{display:inline-block;}.cursor{cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;@apply(--paging-item-cursor-mixin);}</style>
     <template>
         <div id="pageItemContainer" class="cursor">
             <content>&nbsp;</content>
         </div>
+    </template>
+</dom-module>
+<dom-module id="ff-paging-dropdown" assetpath="bower_components/fact-finder-custom-elements/dist/ff-paging-dropdown/">
+    <style>:host{display:inline-block;outline:none;}.ff-paging-dropdown-container{position:absolute;display:flex;flex-direction:column;background-color:white;outline:none;z-index:1001;-webkit-transition:height .4s;-moz-transition:height .4s;-ms-transition:height .4s;-o-transition:height .4s;transition:height .4s;box-sizing:border-box;@apply(--dropdown-item-container);}.ff-paging-dropdown-closed{display:none;}</style>
+    <template>
+        <content select="ff-paging-item.selected"></content>
+        <div class="ff-paging-dropdown-container ff-paging-dropdown-closed">
+            <content select="ff-paging-item"></content>
+        </div>
+    </template>
+</dom-module>
+<dom-module id="ff-paging-set" assetpath="bower_components/fact-finder-custom-elements/dist/ff-paging-set/">
+    <style>:host{display:inline-block;}</style>
+    <template>
+        <content></content>
     </template>
 </dom-module>
 <dom-module id="ff-products-per-page-item" assetpath="bower_components/fact-finder-custom-elements/dist/ff-products-per-page-item/">
