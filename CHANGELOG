@@ -1,3 +1,11 @@
+NEW 1.2.1
+FIX: fixed ff-paging-item changes type attribute to currentLink
+FIX: query param was encoded twice in tracking requests
+FIX. ff-searchbox value was shown url encoded when loading the page the first time
+ADD: add a data-anchor attribute to the ff-record to resolve hyper links
+ADD: add 'data-track-count' to TrackingBehavior
+FIX: don't dispatch to the breadcrumb after a paging, ppp or sort
+
 1.2.0
 ADD: ff-slider-control introduces new mixins
 ADD: ff-paging-item does now set the css class disabled when it is not active
