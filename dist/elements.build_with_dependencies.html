@@ -53,7 +53,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </template>
 </dom-module>
 <dom-module id="ff-asn-group" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn-group/">
-    <style>:host{opacity:0;transition:opacity 400ms;outline:none;display:block;min-width:180px;max-width:220px;}:host-context([align="horizontal"]) #wrapper{position:absolute;width:100%;}.ff-asn-group-container{position:relative;}#wrapper{position:relative;transition-duration:350ms;@apply(--all-links-container);}</style>
+    <style>:host{opacity:0;transition:opacity 400ms;outline:none;display:block;min-width:180px;max-width:220px;}:host-context([align="horizontal"]) #wrapper{position:absolute;width:100%;}.ff-asn-group-container{position:relative;@apply(--ff-asn-group-container);}#wrapper{position:relative;transition-duration:350ms;@apply(--all-links-container);}</style>
 
     <template>
         
@@ -70,7 +70,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </template>
 </dom-module>
 <dom-module id="ff-asn-group-slider" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn-group-slider/">
-    <style>:host{opacity:0;transition:opacity 400ms;outline:none;display:block;min-width:180px;max-width:220px;}:host-context([align="horizontal"]) #wrapper{position:absolute;width:100%;}.container{position:relative;}#wrapper{position:relative;transition-duration:400ms;@apply(--all-links-container);}</style>
+    <style>:host{opacity:0;transition:opacity 400ms;outline:none;display:block;min-width:180px;max-width:220px;}:host-context([align="horizontal"]) #wrapper{position:absolute;width:100%;}.container{position:relative;}.ff-asn-group-container{@apply(--ff-asn-group-container);}#wrapper{position:relative;transition-duration:400ms;@apply(--all-links-container);}</style>
 
     <template>
         
@@ -78,7 +78,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </content>
 
         
-        <div class="container">
+        <div class="container ff-asn-group-container">
             <div opened="" id="wrapper">
                 <content></content>
             </div>
@@ -105,7 +105,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 </dom-module>
 
 <dom-module id="ff-asn-remove-all-filter" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn-remove-all-filter/">
-    <style>:host{display:inline-block;}.hidden{display:none;}</style>
+    <style>:host{display:inline-block;}:host(.hidden){display:none;}</style>
     <template>
         <div>
             <content></content>
@@ -165,10 +165,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </dom-module>
 
 <dom-module id="ff-header-navigation" assetpath="bower_components/fact-finder-custom-elements/dist/ff-header-navigation/">
-    <style>#wrapper{@apply(--wrapper);position:relative;}#header{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;@apply(--header);}#header:hover{@apply(--header-hover);}.hiden{display:none !important;}.nav-item{-webkit-box-flex:1;-ms-flex:1;flex:1;@apply(--nav-item);}.nav-item:hover{@apply(--nav-item-hover);}.nav-item-seperator{@apply(--nav-item-seperator);}#container{display:-webkit-box;display:-ms-flexbox;display:flex;flex-direction:column;/*nessecary for hover*/ position:absolute;z-index:1;width:inherit;left:0%;right:0%;background-color:white;@apply(--container);}#container-top{@apply(--container-top);}#container-middle{flex-direction:row;@apply(--container-middle);}#container-left{@apply(--container-left);}#container-center{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;@apply(--container-center);}#container-right{@apply(--container-right);}#container-bottom{@apply(--container-bottom);}.nav-group{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:0;flex-shrink:0;-ms-flex-preferred-size:300px;flex-basis:300px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;@apply(--nav-group);}.nav-group-caption{@apply(--nav-group-caption);}.nav-group-caption:hover{@apply(--nav-group-caption-hover);}.nav-link{@apply(--nav-link);}.nav-link:hover{@apply(--nav-link-hover);}</style>
+    <style>#wrapper{@apply(--wrapper);position:relative;}#header{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;@apply(--header);}#header:hover{@apply(--header-hover);}.hidden{display:none !important;}.nav-item{-webkit-box-flex:1;-ms-flex:1;flex:1;@apply(--nav-item);}.nav-item:hover{@apply(--nav-item-hover);}.nav-item-seperator{@apply(--nav-item-seperator);}#container{display:-webkit-box;display:-ms-flexbox;display:flex;flex-direction:column;/*nessecary for hover*/ position:absolute;z-index:1;width:inherit;left:0%;right:0%;background-color:white;@apply(--container);}#container-top{@apply(--container-top);}#container-middle{flex-direction:row;@apply(--container-middle);}#container-left{@apply(--container-left);}#container-center{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;@apply(--container-center);}#container-right{@apply(--container-right);}#container-bottom{@apply(--container-bottom);}.nav-group{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:0;flex-shrink:0;-ms-flex-preferred-size:300px;flex-basis:300px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;@apply(--nav-group);}.nav-group:hover{@apply(--nav-group-hover);}.nav-group-caption{@apply(--nav-group-caption);}.nav-group-caption:hover{@apply(--nav-group-caption-hover);}.nav-link{@apply(--nav-link);}.nav-link:hover{@apply(--nav-link-hover);}</style>
 
     <template>
-        <div id="wrapper" on-mouseout="onHoverEnd" on-mouseover="onHoverAll">
+        <div id="wrapper" on-mouseleave="onHoverEnd" on-mouseenter="onHoverAll">
             <div id="header">
                 <div class="nav-item-seperator"></div>
                 <template is="dom-repeat" items="{{elements}}" as="header">
@@ -177,7 +177,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     <div class="nav-item-seperator"></div>
                 </template>
             </div>
-            <div id="container" class="hiden">
+            <div id="container" class="hidden">
 
                 <div id="container-top">
                     <content id="containerTopContent" select$="[slot='container-top-{{selectedElement.name}}']"></content>
@@ -372,7 +372,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 </dom-module>
 
 <dom-module id="ff-record-list" assetpath="bower_components/fact-finder-custom-elements/dist/ff-record-list/">
-    <style>:host{display:block;}</style>
+    <style>:host{display:block;}#infiniteBorder{height:1px;width:1px;position:absolute;}</style>
     <template>
         <content></content>
         <div id="infiniteBorder"></div>
