@@ -1,4 +1,15 @@
-NEW 1.2.1
+NEW 1.2.2
+FIX: ff-asn-group-slider is not opened when group filters are active
+ADD: ff-communication does now support 2 new attribute currency-code="GBP" currency-country-code="en-GB" all prices can now automatically be rewritten according to this new settings
+ADD: improve validation on slider-control input fields
+ADD: add option "all" for keep-url-params which will keep all non FACT-Finder related params
+FIX: timing issues on out of order suggest results
+ADD: add suggest-delay to ff-searchbox to customize the react time of the input.
+FIX: log error if image data is not in record instead of sending a request with /undefiend
+ADD: infinite-scroll-margin to ff-record-list
+FIX: added new regex for query param
+
+1.2.1
 FIX: fixed ff-paging-item changes type attribute to currentLink
 FIX: query param was encoded twice in tracking requests
 FIX. ff-searchbox value was shown url encoded when loading the page the first time
