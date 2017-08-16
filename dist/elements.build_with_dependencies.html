@@ -20,12 +20,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div style="position: relative;width: 100%;height: 100%" class="ff_slidebar">
             
             <div id="slider1" style="position: absolute !important;">
-                <content select="#slider1">
+                <content select="[data-slider='1']">
                     <div class="slider cursorPointer"></div>
                 </content>
             </div>
             <div id="slider2" style="position: absolute !important;">
-                <content select="#slider2">
+                <content select="[data-slider='2']">
                     <div class="slider cursorPointer"></div>
                 </content>
             </div>
@@ -33,21 +33,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </template>
 </dom-module>
 <dom-module id="ff-slider-control" assetpath="bower_components/fact-finder-custom-elements/dist/ff-slider-control/">
-    <style>:host{display:block;/*width:200px;*/ opacity:0;transition:opacity 800ms;padding:10px 0 10px 0;}#ffSlideControlSection{margin-left:auto;margin-right:auto;position:relative;min-height:20px;@apply(--ff-slide-control-section);}#ffSlideControlSection input{width:40px;}#ffSliderSection{margin-top:10px;@apply(--ff-slider-section);}</style>
+    <style>:host{display:block;/*width:200px;*/ opacity:0;transition:opacity 800ms;padding:10px 0 10px 0;}#ffSliderSection{margin-top:10px;@apply(--ff-slider-section);}</style>
 
     <template>
-        <div id="ffSlideControlSection">
-            <content data-content-control="1" select="[data-control='1']">
-                <input data-control="1" type="text" style="position: absolute;left: 0px;">
-            </content>
-            <content data-content-control="2" select="[data-control='2']">
-                <input data-control="2" type="text" style="position: absolute;right: 0px;">
-            </content>
-        </div>
         <div id="ffSliderSection">
             <content data-content-slider="" select="*">
-                
-                
+
             </content>
         </div>
     </template>
@@ -381,7 +372,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <dom-module id="ff-searchbox" assetpath="bower_components/fact-finder-custom-elements/dist/ff-searchbox/"></dom-module>
 <dom-module id="ff-searchbutton" assetpath="bower_components/fact-finder-custom-elements/dist/ff-searchbutton/"></dom-module>
 <dom-module id="ff-carousel" assetpath="bower_components/fact-finder-custom-elements/dist/ff-carousel/">
-    <style>:host{display:block;}.ff-carousel-container{overflow:hidden;@apply(--ff-carousel-container);}.ff-carousel-plane{transition:500ms;transform:translate3d(0px,0px,0px);display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-around;@apply(--ff-carousel-plane);}#bullets{text-align:center;@apply(--ff-carousel-legend);}.ff-carousel-page{background-color:lightgrey;width:10px;height:10px;margin:0 5px;padding:0;cursor:pointer;outline:none;border-radius:10px;border:none;@apply(--ff-carousel-page);}.ff-carousel-page:hover{background-color:grey;@apply(--ff-carousel-page-hover);}.selected{background-color:grey;@apply(--ff-carousel-page-selected);}</style>
+    <style>:host{display:block;}.ff-carousel-container{overflow:hidden;@apply(--ff-carousel-container);}.ff-carousel-plane{transition:500ms;transform:translate3d(0px,0px,0px);display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-around;@apply(--ff-carousel-plane);}#bullets{text-align:center;@apply(--ff-carousel-bullets);}.ff-carousel-bullet-button{background-color:lightgrey;width:10px;height:10px;margin:0 5px;padding:0;cursor:pointer;outline:none;border-radius:10px;border:none;@apply(--ff-carousel-bullet-button);}.ff-carousel-bullet-button:hover{background-color:grey;@apply(--ff-carousel-bullet-button-hover);}.selected{background-color:grey;@apply(--ff-carousel-bullet-button-selected);}</style>
     <template>
         <slot name="buttons"></slot>
         <div class="ff-carousel-container" id="container">

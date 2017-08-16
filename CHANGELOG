@@ -1,4 +1,12 @@
-NEW 1.2.2
+NEW 1.2.3
+BREAKING CHANGE: we've untied the ff-slider-control templates completely to allow more layout flexibility. This may break you styles because the html order is now kept like supplied.
+ADD: usePerso attribute to ff-recommendation
+ADD: ff-slider-control input element attributes are now stamped with the template engine like: <input type="text" data-control='1' data-read-only-suffix="{{group.unit}}"/>
+FIX: fixed a tracking issue in pushed products campaigns
+CHG: rename mixin's for ff-carousel legend to bullets and add record observer
+FIX: fixed occasional bug where right slider jumps to the left side and cant be moved afterwards
+
+1.2.2
 FIX: ff-asn-group-slider is not opened when group filters are active
 ADD: ff-communication does now support 2 new attribute currency-code="GBP" currency-country-code="en-GB" all prices can now automatically be rewritten according to this new settings
 ADD: improve validation on slider-control input fields
