@@ -1,4 +1,8 @@
-NEW 1.2.3
+NEW 1.2.4
+FIX: fixed slider control bug where undefined was set as a value when no unit was configured
+FIX: error ref_node to insertBefore is not a child of this node
+
+1.2.3
 BREAKING CHANGE: we've untied the ff-slider-control templates completely to allow more layout flexibility. This may break you styles because the html order is now kept like supplied.
 ADD: usePerso attribute to ff-recommendation
 ADD: ff-slider-control input element attributes are now stamped with the template engine like: <input type="text" data-control='1' data-read-only-suffix="{{group.unit}}"/>
