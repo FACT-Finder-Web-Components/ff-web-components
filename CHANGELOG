@@ -1,5 +1,6 @@
 NEW 1.2.4
 FIX: fixed slider control bug where undefined was set as a value when no unit was configured
+FIX: fixed a bug where the right slider could cross the right border
 FIX: error ref_node to insertBefore is not a child of this node
 
 1.2.3
