@@ -1,4 +1,11 @@
-NEW 1.2.4
+NEW 1.2.5
+FIX: ff-onfocus-suggest replace nodelist forEach with normal for-loops
+FIX: reset ff-carousel to slide to first slide after the records have changed
+CHG: make filtering without clusterLevel possible again
+ADD: add single-hit-redirect-base-path to ff-communication for redirect to deeplink when just 1 record is in result
+FIX: fixed a rare breadcrumb bug
+
+1.2.4
 FIX: fixed slider control bug where undefined was set as a value when no unit was configured
 FIX: fixed a bug where the right slider could cross the right border
 FIX: error ref_node to insertBefore is not a child of this node
