@@ -1,4 +1,15 @@
-NEW 1.2.5
+NEW 1.2.6
+FIX: fix bug in ff-paging-dropdown when dispatching result of new products-per-page
+FIX: fix check for deeplink on on-record-redirect
+FIX: fix wrong max width calculation for ff-slider
+FIX: ff-communication iphone wrong null check when using single-hit-redirect-base-path
+fix: fixed a transition bug where a transition was executed with an transition duration of 0s instead of its original transition-duration value
+
+Style Changes
+CHG: ff-asn-group-element - in some cases a style="display: inline;" was added to the [data-selected] [data-unselected]
+CHG: ff-asn-group-element - we've changed the wrapping divs (#selected, #unselectd) display property to display: inline-block instead of display: block; If you want to revert the changes use the new mixins --unselected-container and --selected-container to set the properties back to block
+
+1.2.5
 FIX: ff-onfocus-suggest replace nodelist forEach with normal for-loops
 FIX: reset ff-carousel to slide to first slide after the records have changed
 CHG: make filtering without clusterLevel possible again
