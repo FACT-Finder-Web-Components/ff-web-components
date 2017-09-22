@@ -1,4 +1,7 @@
-NEW 1.2.6
+1.2.7 - pre-release
+FIX: fix a bug where unit is not shown at first request
+
+Latest 1.2.6
 FIX: fix bug in ff-paging-dropdown when dispatching result of new products-per-page
 FIX: fix check for deeplink on on-record-redirect
 FIX: fix wrong max width calculation for ff-slider
