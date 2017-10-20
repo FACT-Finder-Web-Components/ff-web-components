@@ -1,4 +1,10 @@
-1.2.7 - pre-release
+1.2.7-pre-release-2
+ADD: add category filtering with filterPath and pretty urls
+ADD: ff-slider: slider resets now the filter if values are back to absolute min/max
+ADD: ff-asn-group gets select-box (<select>) for hiddenLinks as alternative
+FIX: topic "result" is now dispatched again on ppp, paging and sort events
+
+1.2.7-pre-release-1
 FIX: fix a bug where unit is not shown at first request
 
 Latest 1.2.6
