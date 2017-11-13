@@ -1,3 +1,6 @@
+1.2.7-pre-release-4
+BUG: fix slider hide bug when min=max value
+
 1.2.7-pre-release-3
 CHG: remove infiniteBorder div in ff-record-list when no infinite-scrolling is active
 CHG: ff-slider uses now selectedMin/Max as absoluteMin/Max if selected > absolute
