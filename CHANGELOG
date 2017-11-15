@@ -1,3 +1,6 @@
+1.2.7-pre-release-6
+ADD: add only-search-params and parameter-whitelist to ff-communication
+
 1.2.7-pre-release-5
 CHG: use-url-parameter="false" in conjunction with keep-url-params="all" does now prevent webcomponents from removing custom http parameter
 
