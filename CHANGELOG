@@ -1,3 +1,6 @@
+1.2.7-pre-release-5
+CHG: use-url-parameter="false" in conjunction with keep-url-params="all" does now prevent webcomponents from removing custom http parameter
+
 1.2.7-pre-release-4
 BUG: fix slider hide bug when min=max value
 
