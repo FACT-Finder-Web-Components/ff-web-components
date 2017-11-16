@@ -1,3 +1,6 @@
+1.2.7-pre-release-7
+ADD: possibility to localize multiple price fields with the "currency-fields" attribute on ff-communication
+
 1.2.7-pre-release-6
 ADD: add only-search-params and parameter-whitelist to ff-communication
 
