@@ -1,10 +1,14 @@
-1.2.9-pre-release-10
+1.2.7-pre-release-11
+CHG: dispatch campaigns on paging events
+CHG: do not update records in ff-record-list if the dispatched records are the same as the old records
+
+1.2.7-pre-release-10
 ADD: currency-min-digits and currency-max-digits to ff-communication for currency localization configuration
 
-1.2.9-pre-release-9
+1.2.7-pre-release-9
 FIX: currency-code="GBP" and currency-country-code="en-GB" are now working on page 2 and following
 
-1.2.8-pre-release-8
+1.2.7-pre-release-8
 FIX: fixed mustache.js bug when using requirejs introduced with the upgrade to mustache 2.3.ß
 FIX: removed a console.log
 
