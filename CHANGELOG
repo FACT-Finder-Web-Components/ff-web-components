@@ -1,3 +1,6 @@
+1.2.9-pre-release-10
+ADD: currency-min-digits and currency-max-digits to ff-communication for currency localization configuration
+
 1.2.9-pre-release-9
 FIX: currency-code="GBP" and currency-country-code="en-GB" are now working on page 2 and following
 
