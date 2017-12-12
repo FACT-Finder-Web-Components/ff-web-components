@@ -1,3 +1,6 @@
+1.2.7-pre-release-13
+ADD: ff-suggest-item and ff-asn-group-element are now supporting data-image="{{myOwnBindign}}"
+
 1.2.7-pre-release-12
 ADD: <option> element does now support data binding when using <ff-asn-group select-box="true">
 
