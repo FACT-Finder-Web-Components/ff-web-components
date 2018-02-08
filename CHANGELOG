@@ -5,12 +5,12 @@ FIX: ASN groups wrong order
 CHG: ff-slider-control does now update currencies when group changes -> before only on initialization
 
 1.2.7-pre-release-14
-asn-group-elements hiddenLinks are not rendered when detailedLinks is set to 0
-remove ff-slider log
-ff-record/ff-record-list stamp-always attribute
-By default ff-record does not stamp the dom if the old recordData and the new recordData dont differ by id record.id !== record.id
-If you set the Boolean stamp-always attribute the dom is always stamped even if the id's dont differ (<ff-record-list stamp-always>...</...)
-ff-record-list will always set stamp-always on its ff-record elements
+FIX: ff-asn-group hiddenLinks are not rendered when detailedLinks is set to 0
+FIX: remove ff-slider log
+ADD: ff-record/ff-record-list stamp-always attribute
+     By default ff-record does not stamp the dom if the old recordData and the new recordData dont differ by id record.id !== record.id
+     If you set the Boolean stamp-always attribute the dom is always stamped even if the id's dont differ (<ff-record-list stamp-always>...</...)
+     ff-record-list will always set stamp-always on its ff-record elements
 
 1.2.7-pre-release-13
 ADD: ff-suggest-item and ff-asn-group-element are now supporting data-image="{{myOwnBindign}}"
