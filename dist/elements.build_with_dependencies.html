@@ -14,86 +14,7 @@ The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
 The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
---><meta charset="UTF-8"></head><body><div hidden="" by-vulcanize=""><dom-module id="ff-slider" assetpath="bower_components/fact-finder-custom-elements/dist/ff-slider/">
-    <style>:host{height:5px;background-color:#336;margin:5px auto;display:block;opacity:0;transition:opacity 800ms;}.ff_slidebar{@apply(--slidebar-mixin);}</style>
-    <template>
-        <div id="ffSliderBar" style="position: relative;width: 100%;height: 100%" class="ff_slidebar">
-            
-            <div id="slider1" style="position: absolute !important;">
-                <content select="[data-slider='1']">
-                </content>
-            </div>
-            <div id="slider2" style="position: absolute !important;">
-                <content select="[data-slider='2']">
-                </content>
-            </div>
-        </div>
-    </template>
-</dom-module>
-<dom-module id="ff-slider-control" assetpath="bower_components/fact-finder-custom-elements/dist/ff-slider-control/">
-    <style>:host{display:block;/*width:200px;*/ opacity:0;transition:opacity 800ms;padding:10px 0 10px 0;}#ffSliderSection{margin-top:10px;@apply(--ff-slider-section);}</style>
-
-    <template>
-        <div id="ffSliderSection">
-            <content data-content-slider="" select="*">
-
-            </content>
-        </div>
-    </template>
-</dom-module>
-<dom-module id="ff-asn-group" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn-group/">
-    <style>:host{opacity:0;transition:opacity 400ms;outline:none;display:block;min-width:180px;max-width:220px;}:host-context([align="horizontal"]) #wrapper{position:absolute;width:100%;}.ff-asn-group-container{position:relative;@apply(--ff-asn-group-container);}#wrapper{position:relative;transition-duration:350ms;@apply(--all-links-container);}</style>
-
-    <template>
-        
-        <content select="[data-container='groupCaption']">
-
-        </content>
-
-        
-        <div class="ff-asn-group-container">
-            <div opened="" id="wrapper">
-                <content></content>
-            </div>
-        </div>
-    </template>
-</dom-module>
-<dom-module id="ff-asn-group-slider" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn-group-slider/">
-    <style>:host{opacity:0;transition:opacity 400ms;outline:none;display:block;min-width:180px;max-width:220px;}:host-context([align="horizontal"]) #wrapper{position:absolute;width:100%;}.container{position:relative;}.ff-asn-group-container{@apply(--ff-asn-group-container);}#wrapper{position:relative;transition-duration:400ms;@apply(--all-links-container);}</style>
-
-    <template>
-        
-        <content select="[data-container='groupCaption']">
-        </content>
-
-        
-        <div class="container ff-asn-group-container">
-            <div opened="" id="wrapper">
-                <content></content>
-            </div>
-        </div>
-    </template>
-</dom-module>
-<dom-module id="ff-asn-group-element" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn-group-element/">
-    <style>:host{display:block;outline:none;}#unselected{display:inline-block;@apply (--unselected-container);}#selected{display:inline-block;@apply (--selected-container);}</style>
-    <template>
-        <div id="selected" style="display: none">
-            <content select="[data-selected]"></content>
-        </div>
-        <div id="unselected">
-            <content select="[data-unselected]"></content>
-        </div>
-    </template>
-</dom-module>
-<dom-module id="ff-asn" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn/">
-    <style>:host{outline:none;transition:opacity 600ms;display:block;}:host([align="horizontal"]){display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}</style>
-
-    <template>
-        <content></content>
-    </template>
-</dom-module>
-
-<dom-module id="ff-asn-remove-all-filter" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn-remove-all-filter/">
+--><meta charset="UTF-8"></head><body><div hidden="" by-vulcanize=""><dom-module id="ff-asn-remove-all-filter" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn-remove-all-filter/">
     <style>:host{display:inline-block;}:host(.hidden){display:none;}</style>
     <template>
         <div>
@@ -399,6 +320,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <content></content>
     </template>
 </dom-module>
+<dom-module id="ff-slider" assetpath="bower_components/fact-finder-custom-elements/dist/ff-slider/">
+    <style>:host{height:5px;background-color:#336;margin:5px auto;display:block;opacity:0;transition:opacity 800ms;}.ff_slidebar{@apply(--slidebar-mixin);}</style>
+    <template>
+        <div id="ffSliderBar" style="position: relative;width: 100%;height: 100%" class="ff_slidebar">
+            
+            <div id="slider1" style="position: absolute !important;">
+                <content select="[data-slider='1']">
+                </content>
+            </div>
+            <div id="slider2" style="position: absolute !important;">
+                <content select="[data-slider='2']">
+                </content>
+            </div>
+        </div>
+    </template>
+</dom-module>
+<dom-module id="ff-slider-control" assetpath="bower_components/fact-finder-custom-elements/dist/ff-slider-control/">
+    <style>:host{display:block;/*width:200px;*/ opacity:0;transition:opacity 800ms;padding:10px 0 10px 0;}#ffSliderSection{margin-top:10px;@apply(--ff-slider-section);}</style>
+
+    <template>
+        <div id="ffSliderSection">
+            <content data-content-slider="" select="*">
+
+            </content>
+        </div>
+    </template>
+</dom-module>
 <dom-module id="ff-sortbox" assetpath="bower_components/fact-finder-custom-elements/dist/ff-sortbox/">
     <style>:host{display:inline-block;outline:none;}.ff-sort-closed{display:none;}.ff-sort-dropdown-container{position:absolute;background-color:white;z-index:1001;-webkit-transition:height .4s;-moz-transition:height .4s;-ms-transition:height .4s;-o-transition:height .4s;transition:height .4s;box-sizing:border-box;@apply(--sort-item-container);}</style>
     <template>
@@ -450,4 +398,56 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </template>
 </dom-module>
 <dom-module id="ff-template" assetpath="bower_components/fact-finder-custom-elements/dist/ff-template/"></dom-module>
+<dom-module id="ff-asn-group" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn-group/">
+    <style>:host{opacity:0;transition:opacity 400ms;outline:none;display:block;min-width:180px;max-width:220px;}:host-context([align="horizontal"]) #wrapper{position:absolute;width:100%;}.ff-asn-group-container{position:relative;@apply(--ff-asn-group-container);}#wrapper{position:relative;transition-duration:350ms;@apply(--all-links-container);}</style>
+
+    <template>
+        
+        <content select="[data-container='groupCaption']">
+
+        </content>
+
+        
+        <div class="ff-asn-group-container">
+            <div opened="" id="wrapper">
+                <content></content>
+            </div>
+        </div>
+    </template>
+</dom-module>
+<dom-module id="ff-asn-group-slider" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn-group-slider/">
+    <style>:host{opacity:0;transition:opacity 400ms;outline:none;display:block;min-width:180px;max-width:220px;}:host-context([align="horizontal"]) #wrapper{position:absolute;width:100%;}.container{position:relative;}.ff-asn-group-container{@apply(--ff-asn-group-container);}#wrapper{position:relative;transition-duration:400ms;@apply(--all-links-container);}</style>
+
+    <template>
+        
+        <content select="[data-container='groupCaption']">
+        </content>
+
+        
+        <div class="container ff-asn-group-container">
+            <div opened="" id="wrapper">
+                <content></content>
+            </div>
+        </div>
+    </template>
+</dom-module>
+<dom-module id="ff-asn-group-element" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn-group-element/">
+    <style>:host{display:block;outline:none;}#unselected{display:inline-block;@apply (--unselected-container);}#selected{display:inline-block;@apply (--selected-container);}</style>
+    <template>
+        <div id="selected" style="display: none">
+            <content select="[data-selected]"></content>
+        </div>
+        <div id="unselected">
+            <content select="[data-unselected]"></content>
+        </div>
+    </template>
+</dom-module>
+<dom-module id="ff-asn" assetpath="bower_components/fact-finder-custom-elements/dist/ff-asn/">
+    <style>:host{outline:none;transition:opacity 600ms;display:block;}:host([align="horizontal"]){display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}</style>
+
+    <template>
+        <content></content>
+    </template>
+</dom-module>
+
 </div></body></html>

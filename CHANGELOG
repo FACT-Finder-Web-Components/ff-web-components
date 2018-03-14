@@ -1,3 +1,9 @@
+1.2.7-pre-release-16
+FIX: wrong unit when using <ff-communication currency-code=""> for slider-control inputs
+FIX: suggest highlights only one word when searching for multiple words
+FIX: ff-suggest-item query highlighting does now properly escape special characters
+FIX: jumping slider buttons
+
 1.2.7-pre-release-15
 FIX: ff-suggest is not rendered when detached and attached again after initialization.
 FIX: currency-code="CODE" currency-country-code="CODE" does now respect multi values like: 100.00 - 150.00
