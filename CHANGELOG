@@ -1,3 +1,7 @@
+1.2.7-pre-release-17
+CHG: search requests with custom topics won't update the currentSearchResult property and the url parameters
+ADD: new ff-checkout-tracking element
+
 1.2.7-pre-release-16
 FIX: wrong unit when using <ff-communication currency-code=""> for slider-control inputs
 FIX: suggest highlights only one word when searching for multiple words
