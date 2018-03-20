@@ -1,3 +1,6 @@
+1.2.7-pre-release-18
+HOTFIX: fixed a regex issue regarding suggest query highlighting introduced in 1.2.7-pre-release-16
+
 1.2.7-pre-release-17
 CHG: search requests with custom topics won't update the currentSearchResult property and the url parameters
 ADD: new ff-checkout-tracking element
