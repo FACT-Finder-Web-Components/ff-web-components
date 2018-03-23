@@ -1,3 +1,6 @@
+1.2.7-pre-release-12
+FIX: appending http parameters without a value doesn't cause an error anymore
+
 1.2.7-pre-release-19
 CHG: ff-slider element does now encode special characters like ~ or ä in parameter names
 FIX: <ff-communication use-url-parameter="false"> does now respect all events. Before it could happen that url parameters were pushed by accident.
