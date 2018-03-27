@@ -1,4 +1,9 @@
-1.2.7-pre-release-12
+1.2.7-pre-release-21
+ADD
+string attribute <ff-communication sort-url-parameters-alphabetically="true"> which will cause all http parameters and the related parameter values to be alphabetically sorted
+boolean attribute <ff-communication async-facets> which will cause the facets to be rendered after the records are rendered
+
+1.2.7-pre-release-20
 FIX: appending http parameters without a value doesn't cause an error anymore
 
 1.2.7-pre-release-19
