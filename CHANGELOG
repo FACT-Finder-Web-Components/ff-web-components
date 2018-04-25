@@ -1,3 +1,9 @@
+1.2.7-pre-release-22
+CHG
+ff-slider wrapper div#sliderX got a min-width: 1px in order to prevent slider which occur if the wrapper or the [data-slider] element have a width of 0px
+FIX
+ff-slider-control input are not updating the slider position
+
 1.2.7-pre-release-21
 ADD
 string attribute <ff-communication sort-url-parameters-alphabetically="true"> which will cause all http parameters and the related parameter values to be alphabetically sorted
