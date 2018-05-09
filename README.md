@@ -12,9 +12,9 @@ If you don't have bower installed follow this instructions, otherwise continue w
 2. Install [bower](https://bower.io/) `npm install bower -g`
 3. Type `bower init` and follow the instructions
 4. Add the following line to your dependencies section: `"ff-web-components": "https://github.com/FACT-Finder/ff-web-components.git#1.0.x"` adjust the version if necessary
-For a complete bower.json example see [ff-web-components-demos](https://github.com/FACT-Finder/ff-web-components-demos)
+For a complete bower.json example see [ff-web-components-demos](https://github.com/FACT-Finder-Web-Components/demos)
 
 ### Option 2 (Without using bower)
-1. Download a release version of the repository [Releases](https://github.com/FACT-Finder/ff-web-components/releases) OR Download it from [web-components.fact-finder.de](http://web-components.fact-finder.de/download)
+1. Download a release version of the repository [Releases](https://github.com/FACT-Finder-Web-Components/ff-web-components/releases) OR Download it from [web-components.fact-finder.de](http://web-components.fact-finder.de/download)
 2. Unzip the file
 3. Unzip the release-zip (bower_components.zip) file wherever you need it
