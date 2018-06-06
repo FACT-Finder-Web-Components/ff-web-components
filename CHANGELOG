@@ -1,3 +1,8 @@
+1.2.7-pre-release-23
+FIX
+Fixed a bug where currencies were not saved to history and therefore were lost
+If the JSON response is too big for the browser history a mock object is pushed to the history which is used to send a new request to FACT-Finder in order to retrieve the old response.
+
 1.2.7-pre-release-22
 CHG
 ff-slider wrapper div#sliderX got a min-width: 1px in order to prevent slider which occur if the wrapper or the [data-slider] element have a width of 0px
