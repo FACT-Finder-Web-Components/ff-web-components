@@ -1,3 +1,6 @@
+1.2.7
+See https://github.com/FACT-Finder-Web-Components/ff-web-components/releases/tag/1.2.7
+
 1.2.7-pre-release-23
 FIX
 Fixed a bug where currencies were not saved to history and therefore were lost
