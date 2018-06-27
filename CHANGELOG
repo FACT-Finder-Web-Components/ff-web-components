@@ -1,3 +1,8 @@
+1.2.8
+fixed an error related to recommendationClick tracking on product detail pages.
+fixed a rare bug where similar products and recommendations are not displayed on first request
+ensure redirect happens if tracking request fails
+
 1.2.7
 See https://github.com/FACT-Finder-Web-Components/ff-web-components/releases/tag/1.2.7
 
