@@ -1,3 +1,11 @@
+1.2.9
+ADD
+boolean attribute "disable-auto-expand" in ff-asn-group and ff-asn-group-slider which will prevent asn groups with active filters from expanding automatically
+FIX
+ff-communication currency-min/max-digits functionality restored
+fixed a bug where campaigns were disappearing after changing page or sort
+fixed a bug where currency symbols were not appearing for shopping cart campaign pushed products
+
 1.2.8
 fixed an error related to recommendationClick tracking on product detail pages.
 fixed a rare bug where similar products and recommendations are not displayed on first request
