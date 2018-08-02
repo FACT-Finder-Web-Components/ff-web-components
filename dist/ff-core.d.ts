@@ -7,9 +7,10 @@ declare module scope.common {
         var isDebug: boolean;
         var isLog: boolean;
         var isProduction: boolean;
-        function log(message: string): void;
-        function error(message: string): void;
-        function debug(message: string): void;
+        function log(message: string, ...args: any[]): void;
+        function error(message: string, ...args: any[]): void;
+        function debug(message: string, ...args: any[]): void;
+        function warn(message: string, ...args: any[]): void;
     }
 }
 declare module scope {
@@ -30,6 +31,7 @@ declare module scope.common {
         _typeFlag: string;
         constructor(searchParams: any);
     }
+    function executeCallback(callback: any): void;
     function elementToString(element: any): string;
     function stringToElement(str: string): any;
     function isArray(obj: any): boolean;
@@ -510,7 +512,7 @@ declare module scope.communication {
          * AP: rename this to 'dispatchSearchResult'
          * @param result
          */
-        function dispatchResult(result: any, event: any): void;
+        function dispatchResult(result: any, event?: any): void;
         /**
          * Dispatches to the result topic.
          * AP: rename this to 'dispatchResult' after the old 'dispatchResult' is renamed.
@@ -643,7 +645,7 @@ declare module scope.communication {
          *
          * @param suggestions, this is a Suggest.ff response
          */
-        function dispatchSuggest(suggestions: any, event: any): void;
+        function dispatchSuggest(suggestions: any, event?: any): void;
         /**
          * Dispatches a Recommender.ff response.
          * ex response:
