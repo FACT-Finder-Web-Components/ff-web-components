@@ -1,3 +1,8 @@
+1.2.11
+FIX
+fixed navigation tracking when using use-url-params="false"
+
+1.2.10
 ADD
 log information about missing fieldRoles when localizing currencies
 log information about missing configuration

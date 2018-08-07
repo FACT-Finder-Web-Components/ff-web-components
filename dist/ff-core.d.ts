@@ -69,6 +69,11 @@ declare module scope.common {
      * @returns {{}}
      */
     function urlStringToDict(url?: string): {};
+    /**
+     * Returns the parameter string of the url param, or if not supplied, the param string of the current browser location.href
+     * @param {string} url
+     * @returns {string}
+     */
     function getParameterString(url?: string): string;
     /**
      * Turns a parameter string into an object.
@@ -107,7 +112,6 @@ declare module scope.common {
      */
     function fixedEncodeURIComponent(str: any): string;
     /**
-     * fu ff
      *
      * @param str
      * @returns {string}
@@ -366,6 +370,11 @@ declare module scope.communication {
     var globalCustomUrls: CustomUrls;
     var sp: any;
     module Util {
+        /**
+         * Returns the parameter string for the current FF searchResult
+         * @returns {string}
+         */
+        function getSearchParamString(): string;
         /**
          * Updates the search event with the nesessary SEO information
          * @param event
