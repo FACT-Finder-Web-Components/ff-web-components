@@ -1,6 +1,6 @@
 # 3.0.0-pre-release-1
-This our preview release of the next major update. During the next couple of weeks we are going to upgrade all our internal projects to use our 3.0.0 release.
-We expect possible bug fixes during this process but our 3.0 release is fully feature complete compared to our current version 1.2.13 (31.10.2018). The main difference is that we are now compatible to the current native implementation of Webcomponents and therefore we have a smaller JS bundle and a faster execution.
+This our preview release of our next major update. During the next couple of weeks we are going to upgrade all our internal projects to use our 3.0.0 release.
+We expect possible bug fixes during this process but our 3.0 release is feature complete compared to our current version 1.2.13 (31.10.2018). The main difference is that we are now compatible with the current native implementation of Webcomponents and therefore we have a smaller JS bundle and a faster execution.
 
 ## New Boilerplate
 ```html
@@ -10,6 +10,8 @@ We expect possible bug fixes during this process but our 3.0 release is fully fe
     <script defer src="../bower_components/ff-web-components/dist/bundle.js"></script>
 </head>
 ```
+
+We already migrated our demos project in the release/3.0 branch: https://github.com/FACT-Finder-Web-Components/demos/tree/release/3.0
 
 ## CHANGE
 - internal rewrite from [Polymer 1](https://www.polymer-project.org/1.0/docs/devguide/feature-overview) to [Polymer 3](https://www.polymer-project.org/3.0/docs/devguide/feature-overview)
