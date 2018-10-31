@@ -1,5 +1,5 @@
 # 3.0.0-pre-release-1
-This our preview release of our next major update. During the next couple of weeks we are going to upgrade all our internal projects to use our 3.0.0 release.
+This the preview release of our next major update. During the next couple of weeks we are going to upgrade all our internal projects to use our 3.0.0 release.
 We expect possible bug fixes during this process but our 3.0 release is feature complete compared to our current version 1.2.13 (31.10.2018). The main difference is that we are now compatible with the current native implementation of Webcomponents and therefore we have a smaller JS bundle and a faster execution.
 
 ## New Boilerplate
