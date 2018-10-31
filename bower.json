@@ -10,7 +10,6 @@
     "FACT-Finder"
   ],
   "dependencies": {
-    "webcomponentsjs": "^0.7.20"
   },
   "license": "FACT-Finder",
   "homepage": "http://web-components.fact-finder.de/",
