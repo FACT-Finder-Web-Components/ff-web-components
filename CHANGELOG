@@ -1,3 +1,14 @@
+# 1.2.14
+## FIX
+- up/down arrow navigation fix for ff-onfocus-suggest and ff-suggest component
+- fixed erroneous filtering when filter name contains unrelated substring "sort"
+- infinite scrolling of `ff-record-list` doesn't work reliably due to race condition on page load
+- fixed rendering of ff-slider buttons when detached and attached to dom
+
+## CHANGE
+- new `--nav-element-a` mixin to allow anchor elements in `ff-header-navigation` to be styled even in shadow DOM
+
+
 #1.2.13
 ## ADD
 - new element `ff-sortbox-select`
