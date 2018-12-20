@@ -1,3 +1,11 @@
+# 1.2.15
+## FIX
+- fix updating issue of `ff-onfocus-suggest` and `ff-suggest` in IE and Edge
+- prevent dragging min beyond max and vice versa of `ff-slider`
+- fix removing filter of `ff-asn` where `groupName` and `associatedFieldName` have spaces
+- in `ff-slider` take rounding of `absoluteMinValue` and `absoluteMaxValue` into account when calculating slider positions
+
+
 # 1.2.14
 ## FIX
 - up/down arrow navigation fix for ff-onfocus-suggest and ff-suggest component
