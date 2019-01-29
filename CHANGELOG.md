@@ -1,3 +1,13 @@
+# 1.2.16
+## ADD
+- new element `ff-product-teaser-campaign-processor` which can be added within `ff-middleware`
+
+## FIX
+- `ff-slider`
+  - fix an edge case which could lead to an endless loop while receiving new asn data
+  - fix calculation of min slider position when `absoluteMinValue` is larger than zero
+
+
 # 1.2.15
 ## FIX
 - fix updating issue of `ff-onfocus-suggest` and `ff-suggest` in IE and Edge
