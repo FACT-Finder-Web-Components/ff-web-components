@@ -1,3 +1,37 @@
+# 3.0.0-pre-release-2
+## ADD
+- `ff-communication`'s boolean properties with `false` value can be declared as DOM element's attributes explicitly: `<ff-communication />` is equivalent to `<ff-communication search-immediate="false" />`
+
+## FIX
+- `ff-onfocus-suggest` left arrow navigation fix for rows that contain more than 2 elements (the closest element is now selected)
+
+## CHANGE
+- internal rewrite to use [LitElement](https://lit-element.polymer-project.org) as a base class instead of PolymerElement in the WebComponents
+- logging format improvements
+- replaced all `tap` events with `click` events
+- removed all CSS mixins, use regular CSS selectors instead. See migration guide for details
+
+## BREAKING
+- `ff-asn-group`
+    - deprecated attribute `laszy-load` was replaced by `lazy-load`
+    - `ff-asn-group-element` no longer replace `<div data-content="detailedLinks">`, but instead get nested inside now
+    - `ff-asn-group-element` no longer replace `<div data-content="hiddenLinks">`, but instead get nested inside now
+- `ff-products-per-page-item`
+    - removed `clone` method
+- `ff-sortbox`
+    - introduced new container `<div class="ffw-selected-container">`. This container is always visible and contains the selected `ff-sortbox-item`
+    - `key` for _Relevance_ changed from `key="null.desc"` to `key="ff.relevance"`
+- `ff-sortbox-item`
+    - renamed CSS class `selected` to `ffw-selected`
+    - renamed CSS class `showSelected` to `ffw-showSelected`
+- `ff-paging-item`
+    - `productsPerPageItem` property was renamed to `pagingItem`
+- `ff-paging-set`
+    - removed `hide()` and `show()` functions, use `hideSelf()` and `showSelf()` instead
+- `ff-navigation`
+    - removed shadow DOM
+- removed `ff-carousel` from the library
+
 # 3.0.0-pre-release-1
 This the preview release of our next major update. During the next couple of weeks we are going to upgrade all our internal projects to use our 3.0.0 release.
 We expect possible bug fixes during this process but our 3.0 release is feature complete compared to our current version 1.2.13 (31.10.2018). The main difference is that we are now compatible with the current native implementation of Webcomponents and therefore we have a smaller JS bundle and a faster execution.
