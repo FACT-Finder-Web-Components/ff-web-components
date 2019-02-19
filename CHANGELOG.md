@@ -33,7 +33,10 @@ We already migrated our demos project in the release/3.0 branch: https://github.
     - extending built-in HTML elements is not supported anymore. Hence use `<ff-searchbutton>` tag with mandatory `<button />` tag inside instead of `<button is="ff-searchutton" />`
     - if you don't want to use the first `button` tag within `<ff-searchbutton>`, you can use `SearchButton.resetInput(selector)` to set the button
 - `ff-asn-group`
+    - deprecated attribute `laszy-load` was replaced by `lazy-load`
     - use `<div slot="groupCaption" ...>` instead of `<div data-container="groupCaption" ...>`
+    - `ff-asn-group-element`s no longer replace `<div data-content="detailedLinks">`, but instead get nested inside now
+    - `ff-asn-group-element`s no longer replace `<div data-content="hiddenLinks">`, but instead get nested inside now
 - `ff-asn-group-element`
     - use `<div slot="selected" ...>` instead of `<div data-selected ...>`
     - use `<div slot="unselected" ...>` instead of `<div data-unselected ...>`
@@ -42,13 +45,6 @@ We already migrated our demos project in the release/3.0 branch: https://github.
 - `ff-slider`
     - use `<div slot="slider1" id="slider1" ...></div>` instead of `<div data-slider="1" ...></div>`
     - use `<div slot="slider2" id="slider2" ...></div>` instead of `<div data-slider="2" ...></div>`
-- `ff-carousel`
-    - removed `getCurrentSlide` method, use `currentSlide` property directly instead
-    - removed `getMaxSlides` method, use `maxSlides` property directly instead
-- `ff-asn-group`
-    - deprecated attribute `laszy-load` was replaced by `lazy-load`
-    - `ff-asn-group-element` no longer replace `<div data-content="detailedLinks">`, but instead get nested inside now
-    - `ff-asn-group-element` no longer replace `<div data-content="hiddenLinks">`, but instead get nested inside now
 - `ff-products-per-page-item`
     - removed `clone` method
 - `ff-sortbox`
