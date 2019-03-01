@@ -1,3 +1,16 @@
+# 3.0.1
+## FIX
+- `ff-slider`
+    - fixed issue involving changes not being pushed to browser history when previous search was triggered by `search-immediate` attribute on `ff-communication`
+- `ff-asn-group`
+    - fixed bug making "show more" and "show less" buttons appear at the same time
+    - fixed implementation of native select box
+- `ff-asn-group-slider`
+    - "removeFilter" container template is now being picked properly when placed outside of `ff-slider-control`
+- `ff-asn`
+    - fixed removing filter, where `groupName` and `associatedFieldName` have spaces
+
+
 # 3.0.0
 ## New Boilerplate
 ```html
