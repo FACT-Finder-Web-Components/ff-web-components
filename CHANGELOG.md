@@ -1,3 +1,10 @@
+# 1.2.17
+## FIX
+- fix browser history handling for `ff-campaign-advisor-answer` when the previous search was triggered by `search-immediate` attribute on `ff-communication`
+- fix issue involving `ff-slider` changes not being pushed to browser history when previous search was triggered by `search-immediate` attribute on `ff-communication`
+- fix infinite scrolling paging request of `ff-record-list` sometimes overwriting current records instead of appending to them
+
+
 # 1.2.16
 ## ADD
 - new element `ff-product-teaser-campaign-processor` which can be added within `ff-middleware`
