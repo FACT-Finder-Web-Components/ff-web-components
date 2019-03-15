@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/FACT-Finder-Web-Components/ff-web-components"
   },
-  "main": "./dist/element.build_with_dependencies.html",
+  "main": "./dist/bundle.js",
   "keywords": [
     "FACT-Finder"
   ],
