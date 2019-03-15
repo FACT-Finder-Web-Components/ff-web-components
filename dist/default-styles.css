@@ -495,7 +495,7 @@ ff-navigation-item[flyout="true"][direction="left"] > .ffw-item-container {
     right: 100%;
 }
 
-ff-navigation-item[flyout="true"]:hover > .ffw-item-container {
+ff-navigation-item[flyout="true"]:hover > .ffw-item-container:not(:empty) {
     display:inline-block;
 }
 

@@ -1,3 +1,17 @@
+# 3.1.0
+## ADD
+- new element `ff-product-teaser-campaign-processor` which can be added within `ff-middleware`
+
+## FIX
+- `ff-record-list`
+    - paging request during infinite scrolling sometimes overwrites current records instead of appending to them
+
+## CHANGE
+- `ff-navigation`
+    - migrated to Lit-Element
+    - no more need to specify `slot="item"` attribute in `ff-navigation-item` HTML template
+
+
 # 3.0.1
 ## FIX
 - `ff-slider`
