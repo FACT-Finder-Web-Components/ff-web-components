@@ -1,3 +1,22 @@
+# 3.1.1
+With this release all known issues from the `3.0.0` release have been resolved.
+
+## FIX
+- `ff-asn`
+    - default templates for `ff-asn-group` and `ff-asn-group-slider`
+- `ff-header-navigation`
+    - attribute `group-count` is no longer ignored when used together with `hide-empty-groups`
+
+## CHANGE
+- `ff-asn-group`
+    - removed redundant `<div>` (default detailed links container)
+- `ff-asn-remove-all-filter`
+    - migrated to Lit-Element
+- `ff-compare`
+    - migrated to Lit-Element
+- cleaned up internal browser history handling of `search-immediate` flag
+
+
 # 3.1.0
 ## ADD
 - new element `ff-product-teaser-campaign-processor` which can be added within `ff-middleware`

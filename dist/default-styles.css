@@ -595,9 +595,27 @@ ff-slider .ffw-sliderWrapper {
     /*TODO document @apply(--slider-wrapper);*/
 }
 
+ff-slider [slot^="slider"] {
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: -4px;
+    cursor: pointer;
+}
+
+ff-compare {
+    display: block;
+}
+
 /*ff-slider .ff_slidebar {
     !*TODO document @apply(--slidebar-mixin);*!
 }*/
+
+
+ff-asn-remove-all-filter {
+    display: inline-block;
+}
 
 /* ---- generic ---- */
 
