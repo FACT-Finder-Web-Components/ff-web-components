@@ -1,3 +1,11 @@
+# 1.2.18
+## FIX
+- `ff-header-navigation`
+    - attribute `group-count` isn't ignored anymore when used together with `hide-empty-groups`
+- `ff-onfocus-suggest`
+    - left arrow navigation fix for rows that contain more than two elements (the closest element is now selected)
+
+
 # 1.2.17
 ## FIX
 - fix browser history handling for `ff-campaign-advisor-answer` when the previous search was triggered by `search-immediate` attribute on `ff-communication`

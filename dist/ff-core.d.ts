@@ -815,15 +815,17 @@ declare module scope.communication {
     class FF71CommunicationHandler extends scope.communication.FFCommunicationHandler {
     }
     module FFCommunicationEventAggregator {
+        var eventCounter: number;
         var currentSearchResult: any;
         var navigationResult: any;
         var navigationLayer: any;
         var beforeHistoryPushCallbacks: any[];
         /**
          * IMPORTANT !!!!
-         * Alle Parameter außer query, url, sid und type werden grundsätzlich encoded.
+         * All parameters except query, url, sid and type will be encoded by default.
          *
          * @param event
+         * @returns {number} a chronologically ordered id, which will be included in the dispatched response at ffEvent.dispatchId
          */
         function addFFEvent(event: any): void;
         function removeFailCallback(key: any): boolean;
@@ -851,6 +853,16 @@ declare module scope.middleware.response {
     function MultiAttributeParsing(options: any): {
         topic: string;
         handler: (data: any) => void;
+    };
+}
+declare module scope.middleware.response {
+    /**
+     * This modifier is used to insert "Product Teaser Feedbacktext Campaigns" into the search result records array.
+     * @param options
+     */
+    function ProductTeaserCampaignProcessor(options: any): {
+        topic: string;
+        handler: (result: any) => void;
     };
 }
 declare module scope.html {
