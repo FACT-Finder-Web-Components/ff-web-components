@@ -16,7 +16,7 @@
   "dependencies": {
     "webcomponentsjs": "git://github.com/webcomponents/webcomponentsjs.git#v0.7.24"
   },
-  "license": "FACT-Finder",
+  "license": "SEE LICENSE IN LICENSE.txt",
   "homepage": "http://web-components.fact-finder.de/",
   "private": true
 }
