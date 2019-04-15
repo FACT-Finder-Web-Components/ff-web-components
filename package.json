@@ -17,11 +17,5 @@
   },
   "license": "FACT-Finder",
   "homepage": "http://web-components.fact-finder.de/",
-  "private": true,
-  "ignore": [
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "private": true
 }
