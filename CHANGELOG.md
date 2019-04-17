@@ -1,3 +1,20 @@
+# 3.2.0
+## ADD
+- `ff-searchbox`
+    - added `show-asterisk-query` attribute to determine if '*' query should be visible
+    - '*' query is hidden by default now. Use `show-asterisk-query` attribute to change default behavior
+
+## FIX
+- `ff-asn-group-element`
+    - reverted `selected` attribute's type to `Boolean` which was accidentally changed in a previous version
+
+## CHANGE
+- `ff-breadcrumb-trail`
+    - migrated to Lit-Element
+- `ff-breadcrumb-trail-item`
+    - `clone` function marked as deprecated (to be removed with next breaking changes release)
+
+
 # 3.1.1
 With this release all known issues from the `3.0.0` release have been resolved.
 

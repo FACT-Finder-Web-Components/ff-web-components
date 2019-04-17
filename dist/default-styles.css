@@ -612,9 +612,21 @@ ff-compare {
     !*TODO document @apply(--slidebar-mixin);*!
 }*/
 
-
 ff-asn-remove-all-filter {
     display: inline-block;
+}
+
+ff-breadcrumb-trail {
+    display: inline;
+}
+
+ff-breadcrumb-trail-item {
+    transition: opacity 800ms;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* ---- generic ---- */
