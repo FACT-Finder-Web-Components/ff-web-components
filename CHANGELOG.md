@@ -1,3 +1,45 @@
+# 3.2.0-infinite-scrolling.1
+
+This release contains everything from version `3.2.0` **plus** the new feature involving `ff-record-list`'s infinite scrolling. Before navigating away from the current page by clicking on an `ff-record`, the last scroll position is saved and will now automatically be restored when navigating back to the page. This behaviour is **turned on by default**. On restoring the last scroll position, previously loaded results are restored from the browser's session storage.
+
+You have the option to turn this behaviour off by applying the new attribute `restore-scroll-position="false"` on the relevant `ff-record-list`.
+```html
+<ff-record-list infinite-scrolling
+                restore-scroll-position="false">
+</ff-record-list>
+```
+
+This release also introduces the ability to specify an element which acts as a placeholder for `ff-record`s. In an `infinite-scrolling` setup this placeholder is rendered for each expected `ff-record` while waiting for the next page of results. You might want to give it the same height and width as your regular `ff-record` to ensure a consistent appearance.
+
+Example usage:
+
+```html
+<ff-record-list infinite-scrolling>
+    <ff-record>
+        <div data-redirect="./your-target" data-redirect-target="_self">
+            <div>{{record.Title}}</div>
+        </div>
+    </ff-record>
+
+    <div data-container="infinite-scroll-placeholder">
+        <div>Placeholder image</div>
+        <dic>Placeholder text</span>
+    </div>
+</ff-record-list>
+```
+
+## ADD
+- `ff-record-list`
+    - added attribute `restore-scroll-position`. When navigating back in the browser, this flag scrolls the view to the last clicked `ff-record`. Data of all `ff-record`s is stored in the browser session. Works particularly well in combination with the `infinite-scrolling` attribute
+    - now supporting `infinite-scrolling` in scrollable DOM parents other than `window`
+    - added a placeholder element, which gets shown immediately for each record while waiting for a paging request. It defaults to `<div data-container="infinite-scroll-placeholder"></div>` and can be customized through providing an element with the attribute `data-container="infinite-scroll-placeholder"`
+
+## CHANGE
+- `ff-communication`
+    - when navigating back through browser history and attribute `search-immediate` is set, the search result gets restored from browser history if possible. If this is not possible, a new search is triggered as before
+- internal updates of search result in the browser history via `history.replaceState` no longer overwrite the full history object but merge it into the current
+
+
 # 3.2.0
 ## ADD
 - `ff-searchbox`
