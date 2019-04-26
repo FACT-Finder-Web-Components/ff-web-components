@@ -172,6 +172,10 @@ ff-sortbox-item {
     user-select: none;
 }
 
+ff-sortbox-select {
+    display: inline-block;
+}
+
 
 /* ---- ff-paging ---- */
 

@@ -1,3 +1,13 @@
+# 3.2.0-sortbox-select-template.1
+## ADD
+- `ff-sortbox-select`
+    - users can now specify the `<select>` element in custom templates
+
+## CHANGE
+- `ff-sortbox-select`
+    - removed shadow DOM
+
+
 # 3.2.0
 ## ADD
 - `ff-searchbox`
