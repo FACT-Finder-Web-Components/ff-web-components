@@ -1,3 +1,13 @@
+# 1.3.0
+## ADD
+- `ff-searchbox`
+    - added `showAsteriskQuery` property to determine if '*' query should be visible
+    - '*' query is hidden by default now, use `show-asterisk-query` attribute to change default behavior
+
+## CHANGE
+- cleaned up internal browser history handling of `search-immediate` flag
+
+
 # 1.2.18
 ## FIX
 - `ff-header-navigation`
