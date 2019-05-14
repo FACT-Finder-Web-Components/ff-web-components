@@ -3,7 +3,7 @@ FACT-Finder Web Components
 Predictive Basket branch (experimental)
 ---------------------------------------
 
-This branch introduces the `ff-predictive-basket` element for easy integration with the new FACT-Finder Predictive Basket feature. To use it, you need FACT-Finder version **7.3** or higher.
+This branch introduces the `ff-predictive-basket` element for easy integration with the new FACT-Finder Predictive Basket feature. To use it, you need the latest version of FACT-Finder **7.3** or higher.
 
 _Note that this feature is at an experimental stage and changes may occur._
 
@@ -24,24 +24,26 @@ Once the element is correctly initialized, it will automatically issue a request
 
 #### Attributes
 
+_Default values marked with `*` are inherited from the FACT-Finder API._
+
 Attribute | Required | Type | Default | JS property
 --------- | -------- | ---- | ------- | -----------
 user-id   | yes      | String | _(none)_ | `userId`
 
-The ID of the user for whom products shall be predicted. If the user ID is not specified, no request to FACT-Finder will be issued.
-
+The ID of the user for whom products shall be predicted. Setting this attribute will cause the element to issue a request once it is initialized. Additionally, changing `userId` will also automatically issue a new request.  
+If the user ID is not specified, no request to FACT-Finder will be issued.
 
 
 Attribute | Required | Type | Default | JS property
 --------- | -------- | ---- | ------- | -----------
-max-results | optional | Number |  _(unlimited)_ | `maxResults`
+max-results | optional | Number |  _(unlimited)_* | `maxResults`
 
 The maximum amount of products to be returned from FACT-Finder. To receive all predictions, omit this attribute or set its value to `-1`.
 
 
 Attribute | Required | Type | Default | JS property
 --------- | -------- | ---- | ------- | -----------
-certainty | optional | Number | 60    | `certainty`
+certainty | optional | Number | 60*   | `certainty`
 
 This value is the minimum percentage to which the prediction algorithm is certain that the user will buy the product. Products with a lower certainty will not be returned from FACT-Finder.
 
@@ -80,9 +82,9 @@ This method issues a request to FACT-Finder with the currently set values.
 
 #### Manual update with `blacklist`
 ```js
-function onUpdate(itemsToExclude) {
+function onUpdate() {
     const predBasket = document.querySelector("ff-predictive-basket");
-    predBasket.blacklist = itemsToExclude;  // itemsToExclude must be a comma-separated list
+    predBasket.blacklist = "blacklisted-id-001,blacklisted-id-002,blacklisted-id-003";
     predBasket.getPredictions();
 }
 ```
