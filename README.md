@@ -24,8 +24,6 @@ Once the element is correctly initialized, it will automatically issue a request
 
 #### Attributes
 
-_Default values marked with `*` are inherited from the FACT-Finder API._
-
 Attribute | Required | Type | Default | JS property
 --------- | -------- | ---- | ------- | -----------
 user-id   | yes      | String | _(none)_ | `userId`
@@ -40,12 +38,16 @@ max-results | optional | Number |  _(unlimited)_* | `maxResults`
 
 The maximum amount of products to be returned from FACT-Finder. To receive all predictions, omit this attribute or set its value to `-1`.
 
+_(*) Default value is inherited from the FACT-Finder API._
+
 
 Attribute | Required | Type | Default | JS property
 --------- | -------- | ---- | ------- | -----------
 certainty | optional | Number | 60*   | `certainty`
 
 This value is the minimum percentage to which the prediction algorithm is certain that the user will buy the product. Products with a lower certainty will not be returned from FACT-Finder.
+
+_(*) Default value is inherited from the FACT-Finder API._
 
 
 Attribute | Required | Type | Default | JS property
