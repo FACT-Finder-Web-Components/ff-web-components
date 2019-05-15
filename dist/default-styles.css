@@ -1,3 +1,25 @@
+/* ---- ff-campaign-feedbacktext  ---- */
+
+ff-campaign-feedbacktext {
+    display: block;
+}
+
+/* ---- ff-campaign-advisor ---- */
+
+ff-campaign-advisor, ff-campaign-advisor-question {
+    display: block;
+}
+
+/* ---- ff-single-word-search ---- */
+
+ff-single-word-search, ff-single-word-search-record {
+    display: block;
+}
+
+ff-campaign-pushed-products {
+    display: block;
+}
+
 /* ---- ff-products-per-page ---- */
 
 ff-products-per-page-dropdown {
@@ -129,6 +151,17 @@ ff-nav-element a {
     text-decoration: inherit;
 }
 
+/* ---- ff-record-list ---- */
+
+ff-record-list {
+    display: block;
+}
+
+ff-record-list .ffw-infinite-scrolling-border {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+}
 
 /* ---- ff-record ---- */
 
@@ -170,6 +203,10 @@ ff-sortbox-item {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+ff-sortbox-select {
+    display: inline-block;
 }
 
 
@@ -599,18 +636,12 @@ ff-slider [slot^="slider"] {
     height: 10px;
     width: 10px;
     border: 1px solid black;
-    border-radius: 10px;
-    margin-top: -4px;
     cursor: pointer;
 }
 
 ff-compare {
     display: block;
 }
-
-/*ff-slider .ff_slidebar {
-    !*TODO document @apply(--slidebar-mixin);*!
-}*/
 
 ff-asn-remove-all-filter {
     display: inline-block;
@@ -627,6 +658,73 @@ ff-breadcrumb-trail-item {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+/* ---- ff-search-feedback ---- */
+
+ff-search-feedback  {
+    position: absolute;
+    top: 20px;
+}
+
+ff-search-feedback[align="left"] {
+    left: 0;
+}
+
+ff-search-feedback[align="right"] {
+    right: 0;
+}
+
+ff-search-feedback[align="left"] .ffw-content {
+    transform: translate(0);
+}
+
+ff-search-feedback[align="left"] .ffw-caption {
+    transform: translate(100%);
+}
+
+ff-search-feedback .ffw-noTransition {
+    transition: 0s !important;
+}
+
+ff-search-feedback .ffw-caption {
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+ff-search-feedback .ffw-content {
+    position: absolute;
+    transition: transform 0.3s;
+    transform: translate(100%);
+    right: 0;
+    text-align: left;
+}
+
+ff-search-feedback .ffw-transformZero {
+    transform: translate(0) !important;
+}
+
+ff-search-feedback .ffw-transformX {
+    transform: translate(100%) !important;
+}
+
+/* ---- ff-tag-cloud ---- */
+
+ff-tag-cloud {
+    display: block;
+    max-width: 600px;
+}
+
+ff-tag-cloud .ffw-tagCloudContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+ff-tag-cloud .ffw-tagCloudLink {
+    padding: 2px;
 }
 
 /* ---- generic ---- */

@@ -1,3 +1,29 @@
+# 3.3.0
+## ADD
+- `ff-sortbox-select`
+    - users can now specify the `<select>` element in custom templates
+
+## FIX
+- `ff-checkout-tracking`
+    - fixed error in `trackCheckoutItems` method
+- `ff-asn-group-slider`
+    - fixed slider group being initially expanded although its template does not provide the attribute `opened`
+- `ff-slider`
+    - removed default styles `border-radius: 10px;` and `margin-top: -4px;` with the selector `ff-slider [slot^="slider"]` as they were too invasive (were introduced in `3.1.1`)
+- `ff-suggest-item`
+    - fixed query text highlighting when the query contains a space or a single character word (HTML markup is no longer displayed in place of text)
+
+## CHANGE
+- removed shadow DOM of all elements (except `ff-campaign-advisor-answer`. This is planned to be included in the next release)
+    - `ff-tag-cloud`
+        - use CSS selector `ff-tag-cloud .ffw-tagCloudContainer` instead of `--tag-cloud-container` mixin
+        - use CSS selector `ff-tag-cloud .ffw-tagCloudLink` instead of `--tag-cloud-link` mixin
+    - `ff-search-feedback`
+        - use CSS selector `ff-search-feedback .ffw-caption` instead of `--caption-mixin` mixin
+        - use CSS selector `ff-search-feedback .ffw-content` instead of `--content-mixin` mixin
+- removed inclusion of [ShadyCSS](https://github.com/webcomponents/shadycss) into the bundle.
+
+
 # 3.2.0
 ## ADD
 - `ff-searchbox`
