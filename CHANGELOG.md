@@ -1,3 +1,9 @@
+# 3.3.0-predictive-basket.1
+## ADD
+- `ff-predictive-basket`
+    - introduced new element
+
+
 # 3.3.0
 ## ADD
 - `ff-sortbox-select`
