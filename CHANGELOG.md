@@ -1,3 +1,8 @@
+# 3.3.1
+## FIX
+- removed redundant additional filter request caused by `ff-asn-group-element`
+
+
 # 3.3.0
 ## ADD
 - `ff-sortbox-select`
