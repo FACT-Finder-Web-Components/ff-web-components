@@ -1,3 +1,10 @@
+# 3.3.1-ng.1
+## ADD
+- NG support
+    - search
+    - navigation
+
+
 # 3.3.1
 ## FIX
 - removed redundant additional filter request caused by `ff-asn-group-element`
