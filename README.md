@@ -1,20 +1,46 @@
 FACT-Finder Web Components
 ==========================
+NG branch (experimental)
+------------------------
 
-Check out [web-components.fact-finder.de](http://web-components.fact-finder.de/) for all documentation including Get Started, Developer Guide and more.
+This branch introduces Web Components support for the new NG API. To use it, you need the latest version of FACT-Finder **NG**.
 
-This distribution provides only the build including all dependencies (Polymer 1.7.0). If you need to use/include each element separately please refer to your FACT-Finder Project Developer.
+_Note that this feature is at an experimental stage and changes may occur._
+
+
+## Features
+
+The following features are currently supported:
+- search
+- navigation
+
+More features will be added incrementally.
+
+
+## General Notes
+
+This distribution provides only the build including all dependencies (Polymer 3, Lit Element). If you need to use/include each element separately, please refer to your FACT-Finder Project Developer.
+
+See [web-components.fact-finder.de](http://web-components.fact-finder.de/) for the complete documentation including Get Started, Developer Guide and more.
+
 
 ## Installation
-### Option 1 (Using bower)
-If you don't have bower installed follow this instructions, otherwise continue with step 3:
-1. Install [Node.js](https://nodejs.org/en/)
-2. Install [bower](https://bower.io/) `npm install bower -g`
-3. Type `bower init` and follow the instructions
-4. Add the following line to your dependencies section: `"ff-web-components": "https://github.com/FACT-Finder/ff-web-components.git#3.x.x"` adjust the version as necessary
-For a complete bower.json example see [ff-web-components-demos](https://github.com/FACT-Finder-Web-Components/demos)
 
-### Option 2 (Without using bower)
-1. Download a release version of the repository [Releases](https://github.com/FACT-Finder-Web-Components/ff-web-components/releases) OR Download it from [web-components.fact-finder.de](http://web-components.fact-finder.de/download)
-2. Unzip the file
-3. Unzip the release-zip (bower_components.zip) file wherever you need it
+Directly from GitHub via npm.
+
+For latest update:
+```
+npm i git+https://git@github.com/FACT-Finder-Web-Components/ff-web-components.git#release/ALPHA-NG
+```
+
+Specific version via commit ID (example ID):
+```
+npm i git+https://git@github.com/FACT-Finder-Web-Components/ff-web-components.git#bb9762bf
+```
+
+Or via package.json:
+```json
+"dependencies": {
+  "ff-web-components": "git+https://git@github.com/FACT-Finder-Web-Components/ff-web-components.git#release/ALPHA-NG"
+}
+```
