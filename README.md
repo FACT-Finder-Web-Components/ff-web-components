@@ -17,6 +17,18 @@ The following features are currently supported:
 More features will be added incrementally.
 
 
+## Setup
+
+To use Web Components with FACT-Finder NG, simply set the `version` attribute on `ff-communication` to `ng`. The remaining setup is as usual.
+
+```html
+<ff-communication url="your.fact-finder-ng.url"
+                  version="ng"
+                  channel="your-channel"
+></ff-communication>
+```
+
+
 ## General Notes
 
 This distribution provides only the build including all dependencies (Polymer 3, Lit Element). If you need to use/include each element separately, please refer to your FACT-Finder Project Developer.
