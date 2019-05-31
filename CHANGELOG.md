@@ -1,3 +1,20 @@
+# 3.3.2
+## FIX
+- `ff-navigation`
+    - fixed `dom-updated` event firing so that the event is dispatched after all `ff-navigation-item` elements are rendered
+- `ff-asn-group-slider`
+    - fixed `[data-container="removeFilter"]`-element being shown even though `ff-asn-group-slider` is collapsed. Note that the `[data-container="removeFilter"]`-element is now a child of the `.ffw-wrapper`-element making it consistent with `ff-asn-group`
+- fixed a bug where single-hit-redirect was performed for non-exact searches
+
+## IMPROVEMENTS
+- `ff-campaign-feedbacktext`
+    - added default template `{{text}}`
+    - added property `campaignData` so the campaign to be displayed can be set through JavaScript
+- `ff-campaign-advisor`
+    - works now out of the box without any custom template
+    - added property `campaignData` so the campaign to be displayed can be set through JavaScript
+
+
 # 3.3.1
 ## FIX
 - removed redundant additional filter request caused by `ff-asn-group-element`

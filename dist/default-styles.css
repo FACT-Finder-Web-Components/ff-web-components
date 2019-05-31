@@ -1,4 +1,4 @@
-/* ---- ff-campaign-feedbacktext  ---- */
+/* ---- ff-campaign-feedbacktext ---- */
 
 ff-campaign-feedbacktext {
     display: block;
@@ -6,7 +6,7 @@ ff-campaign-feedbacktext {
 
 /* ---- ff-campaign-advisor ---- */
 
-ff-campaign-advisor, ff-campaign-advisor-question {
+ff-campaign-advisor, ff-campaign-advisor-question, ff-campaign-advisor-answer {
     display: block;
 }
 
