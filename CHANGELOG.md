@@ -1,3 +1,11 @@
+# 1.3.1
+## FIX
+- `ff-suggest-item`
+    - fixed query text highlighting when the query contains a space or a single character word (HTML markup is no more displayed in place of text)
+- `ff-communication`
+    - removed `add-unit-to-filter-groups` attribute as currency encoding is done internally when using the [currency attributes](https://web-components.fact-finder.de/documentation/1.x/currency-guide)
+
+
 # 1.3.0
 ## ADD
 - `ff-searchbox`
