@@ -597,13 +597,11 @@ ff-asn[align="horizontal"] ff-asn-group-slider .ffw-wrapper {
 
 ff-asn-group-slider .ffw-container {
     position: relative;
-    /*TODO document @apply(--ff-asn-group-container);*/
 }
 
 ff-asn-group-slider .ffw-wrapper {
     position: relative;
     transition-duration: 400ms;
-    /*TODO document @apply(--all-links-container);*/
 }
 
 ff-slider-control {
@@ -615,7 +613,6 @@ ff-slider-control {
 
 ff-slider-control .ffw-sliderSection {
     margin-top: 10px;
-    /*@apply(--ff-slider-section); TODO document */
 }
 
 ff-slider {
@@ -629,7 +626,6 @@ ff-slider {
 
 ff-slider .ffw-sliderWrapper {
     min-width: 1px;
-    /*TODO document @apply(--slider-wrapper);*/
 }
 
 ff-slider [slot^="slider"] {

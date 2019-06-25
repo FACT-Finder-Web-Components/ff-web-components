@@ -1,3 +1,25 @@
+# 3.4.0
+## ADD
+- `ff-navigation`
+    - added property `navigationData` and `subscribe` so that it is possible to cancel automatic subscription and set navigation data via JavaScript as well
+
+## FIX
+- fixed bug which could cause data being dispatched before `ffReady` handlers have been invoked
+- `ff-searchbox`
+    - renamed custom event `before-target` back to `before-search`
+- `ff-header-navigation`
+    - fixed categories duplication issue when `ff-header-navigation` and `ff-navigation` components are put together within a page (as well as two instances of `ff-header-navigation` or `ff-navigation`)
+- `ff-breadcrumb-trail`
+    - fixed separator being displayed when there is no data to render the component for
+- `ff-asn`, `ff-paging`
+    - fixed elements throwing exception `The result must not have attributes` when using them in Angular or with `document.createElement("ff-asn")`
+
+## IMPROVEMENTS
+- `ff-slider-control`
+    - added more detailed error logging in case of incorrect custom templates
+    - removed unused HTML attribute `slot="sliderControls"` from default template which is used when no custom template is specified
+
+
 # 3.3.2
 ## FIX
 - `ff-navigation`
