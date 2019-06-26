@@ -1,3 +1,8 @@
+# 3.4.0-paging-select.1
+## ADD
+- `ff-paging-select` - a brand new component that serves the same purpose as `ff-paging-dropdown` but uses the native HTML `select` element
+
+
 # 3.4.0
 ## ADD
 - `ff-navigation`
