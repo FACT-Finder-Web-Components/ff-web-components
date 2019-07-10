@@ -1,3 +1,27 @@
+# 3.5.0
+## ADD
+- `ff-checkout-tracking-item`
+     - add optional attribute `price`. When set this value will be used as price for the checkout tracking request to FACT-Finder instead of the internal lookup from [field roles](https://web-components.fact-finder.de/documentation/3.x/field-roles)
+- `ff-breadcrumb-trail`
+    - added `show-asterisk-query` attribute to determine if '*' query should be visible in the breadcrumb trail
+    - '*' query is hidden by default now. Use `show-asterisk-query` attribute to change default behavior
+    
+## FIX
+- `ff-communication`
+    - unregister global `popstate` lister correctly when removed from DOM
+- `ff-searchbox`
+    - added default template preventing DOMException when created with `document.createElement("ff-searchbox")`
+- `ff-paging-dropdown, ff-paging-item, ff-products-per-page-dropdown, ff-prodcuts-per-page-list, ff-products-per-page-select, ff-serachbox, ff-sortbox`
+    - fixed DOMException: The result must not have attributes when using angular or `document.createElement()` 
+    
+## IMPROVEMENTS
+- `ff-template`
+    - migrated to Lit-Element
+- `ff-communication`
+    - skip initial search request triggered by attribute `search-immediate` when navigating back through browser history and the search result can be restored from history
+    - don't dispatch empty data when navigating back through browser history
+    
+
 # 3.4.0
 ## ADD
 - `ff-navigation`
