@@ -157,12 +157,6 @@ ff-record-list {
     display: block;
 }
 
-ff-record-list .ffw-infinite-scrolling-border {
-    height: 1px;
-    width: 1px;
-    position: absolute;
-}
-
 /* ---- ff-record ---- */
 
 ff-record {

@@ -1,3 +1,24 @@
+# 3.6.0
+## ADD
+- `ff-slider-control`
+    - introduced public `submit` method that submits the slider with the current values of `ff-slider-control` inputs
+- `ff-communication`
+    - added `mustache-delimiters` attribute that allows users to set custom mustache.js delimiters
+
+## FIX
+- `ff-breadcrumb-trail`
+    - '*' query is hidden by default now when search is triggered from `ff-navigation` or `ff-header-navigation`
+- `ff-record-list`
+    - removed internal element with selector `.ffw-infinite-scrolling-border` which could be incorrectly placed due to external CSS resulting in endless triggering of new searches
+
+## IMPROVEMENTS
+- `ff-asn`
+    - migrated to Lit-Element
+- `ff-product-detail`
+    - migrated to Lit-Element
+- redirect is no longer cancelled if bundled tracking request fails
+
+
 # 3.5.0
 ## ADD
 - `ff-checkout-tracking-item`
@@ -5,22 +26,22 @@
 - `ff-breadcrumb-trail`
     - added `show-asterisk-query` attribute to determine if '*' query should be visible in the breadcrumb trail
     - '*' query is hidden by default now. Use `show-asterisk-query` attribute to change default behavior
-    
+
 ## FIX
 - `ff-communication`
-    - unregister global `popstate` lister correctly when removed from DOM
+    - unregister global `popstate` listener correctly when removed from DOM
 - `ff-searchbox`
     - added default template preventing DOMException when created with `document.createElement("ff-searchbox")`
 - `ff-paging-dropdown, ff-paging-item, ff-products-per-page-dropdown, ff-prodcuts-per-page-list, ff-products-per-page-select, ff-serachbox, ff-sortbox`
     - fixed DOMException: The result must not have attributes when using angular or `document.createElement()` 
-    
+
 ## IMPROVEMENTS
 - `ff-template`
     - migrated to Lit-Element
 - `ff-communication`
     - skip initial search request triggered by attribute `search-immediate` when navigating back through browser history and the search result can be restored from history
     - don't dispatch empty data when navigating back through browser history
-    
+
 
 # 3.4.0
 ## ADD
