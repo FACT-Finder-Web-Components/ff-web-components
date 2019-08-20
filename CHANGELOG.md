@@ -1,3 +1,14 @@
+# 3.6.1
+## FIX
+- `ff-paging-dropdown`
+    - fixed dropdown not rendering its items correctly
+
+## IMPROVEMENTS
+- removed Polymer 3 dependencies from components that have already been migrated to Lit-Element
+- `ff-record`
+    - render record even if client's data is corrupted (the id of the record returned by FACT-Finder is empty)
+
+
 # 3.6.0
 ## ADD
 - `ff-slider-control`
