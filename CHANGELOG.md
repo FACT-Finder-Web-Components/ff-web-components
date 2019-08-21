@@ -1,3 +1,16 @@
+# 1.4.0
+## ADD
+- `ff-breadcrumb-trail`
+    - added `show-asterisk-query` attribute to determine if '*' query should be visible in the breadcrumb trail
+    - '*' query is hidden by default now. Use `show-asterisk-query` attribute to change default behavior
+- `ff-checkout-tracking-item`
+     - add optional attribute `price`. When set this value will be used as price for the checkout tracking request to FACT-Finder instead of the internal lookup from [field roles](https://web-components.fact-finder.de/documentation/3.x/field-roles)
+
+## IMPROVEMENTS
+- `ff-record`
+    - render record even if client's data is corrupted (the id of the record returned by FACT-Finder is empty)
+
+
 # 1.3.1
 ## FIX
 - `ff-suggest-item`
