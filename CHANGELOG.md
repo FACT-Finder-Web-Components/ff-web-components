@@ -1,3 +1,18 @@
+# 3.7.0
+## ADD
+- `ff-paging-select`
+    - a brand new component that serves the same purpose as `ff-paging-dropdown` but uses the native HTML `select` element
+
+## FIX
+- `ff-asn`
+    - fixed handling of implicitly selected filters
+
+## IMPROVEMENTS
+- `ff-tag-cloud`
+    - migrated to Lit-Element
+    - the component no longer updates on changes to data-unrelated properties
+
+
 # 3.6.1
 ## FIX
 - `ff-paging-dropdown`
