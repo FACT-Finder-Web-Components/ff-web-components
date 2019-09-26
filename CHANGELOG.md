@@ -1,3 +1,9 @@
+# 3.7.0-filter-cloud.1
+## ADD
+- `ff-filter-cloud`
+    - added new component to display all selected asn filters
+
+
 # 3.7.0
 ## ADD
 - `ff-paging-select`
