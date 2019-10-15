@@ -1,3 +1,9 @@
+# 3.7.0-searchable-asn-groups.1
+## ADD
+- `ff-asn`
+    - implemented searchable ASN groups
+
+
 # 3.7.0
 ## ADD
 - `ff-paging-select`
