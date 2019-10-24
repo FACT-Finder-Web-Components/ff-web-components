@@ -1,3 +1,26 @@
+# 3.8.0
+## ADD
+- `ff-filter-cloud`
+    - added new component to display all selected ASN filters
+- `ff-record-list`
+    - added attribute `restore-scroll-position`. When navigating back in the browser, this flag scrolls the view to the last clicked `ff-record`. Data of all `ff-record` elements is stored in the browser session. Works particularly well in combination with the `infinite-scrolling` attribute
+    - now supporting `infinite-scrolling` in scrollable DOM parents other than `window`
+    - added template support for a placeholder element that gets shown for each record that hasn't been fully loaded yet while waiting for a paging request. It defaults to
+      ```html
+      <div data-container="infinite-scroll-placeholder"></div>
+      ```
+      and can be customized through providing an element with the attribute `data-container="infinite-scroll-placeholder"`
+
+## FIX
+- `ff-searchbutton`
+    - fixed a bug where clicking button descendants wasn't triggering the search
+
+## IMPROVEMENTS
+- `ff-communication`
+    - when navigating back through browser history and attribute `search-immediate` is set, the search result gets restored from browser history if possible. If this is not possible, a new search is triggered as before
+- internal updates of search result in the browser history via `history.replaceState` no longer overwrite the full history object but merge it into the current
+
+
 # 3.7.0
 ## ADD
 - `ff-paging-select`
