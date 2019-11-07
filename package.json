@@ -1,8 +1,8 @@
 {
   "name": "ff-web-components",
-  "version": "3.8.0",
+  "version": "3.9.0",
   "authors": [
-    "tobias.armbruster <tobias.armbruster@omikron.net>"
+    "tobias.armbruster"
   ],
   "description": "Web Components made to easily integrate FACT-Finder in online shops",
   "repository": {

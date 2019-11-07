@@ -1,3 +1,21 @@
+# 3.9.0
+## ADD
+- `ff-asn`
+    - implemented searchable ASN groups
+- `ff-record-list`
+    - added `infinite-max-pages` attribute that restricts the maximum number of pages that can be loaded when infinite scrolling is enabled
+
+## FIX
+- `ff-searchbox`
+    - fix for search text being selected when clicking on an input that already has focus
+- `ff-filter-cloud`
+    - fixed alphabetical sorting of the filter names
+- `ff-onfocus-suggest`
+    - fixed component not changing suggestions when hovering the search term or selecting it with arrow keys
+- defer initial calling of listener added through `ResultDispatcher.addCallback` the same way listener of `ResultDispatcher.subscribe` are deferred as described [here](https://web-components.fact-finder.de/documentation/3.x/configuration)
+- fixed navigation tracking to create correct `categoryPath`
+
+
 # 3.8.0
 ## ADD
 - `ff-filter-cloud`
