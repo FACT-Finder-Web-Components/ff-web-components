@@ -1,3 +1,22 @@
+# 3.10.0
+## ADD
+- FACT-Finder NG support
+- `ff-communication`
+    - new `api` attribute to target NG API version (e.g. `v2`, `v3`)
+
+## FIX
+- `ff-record-list`
+    - fixed `ff-record-list` renders `ff-record` elements always in its root, regardless of custom siblings and parent
+- replacing browser history only when `useBrowserHistory` is enabled
+- follow-up fix for navigation tracking
+    - certain values in query parameters could cause an invalid request
+
+## DEPRECATE
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `factfinder.communication.FFCommunicationEventAggregator`
+    - renamed to `factfinder.communication.EventAggregator`
+
+
 # 3.9.0
 ## ADD
 - `ff-asn`
