@@ -1,3 +1,8 @@
+# 3.10.1
+## FIX
+- fixed URL encoding of FFNG tracking POST request parameters
+
+
 # 3.10.0
 ## ADD
 - FACT-Finder NG support
