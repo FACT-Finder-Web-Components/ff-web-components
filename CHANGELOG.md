@@ -1,3 +1,8 @@
+# 1.4.1
+## FIX
+- fixed navigation tracking to create correct `categoryPath`
+
+
 # 1.4.0
 ## ADD
 - `ff-breadcrumb-trail`
