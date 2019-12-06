@@ -1,3 +1,40 @@
+# 3.11.0
+## ADD
+- `core`
+    - additional parameters: `factfinder`, `eventAggregator` and `resultDispatcher` are now accessible from the event object dispatched at `ffReady`
+- `ff-asn-remove-all-filter`
+    - introduced new `keep-category-path` property that preserves category filters
+
+## FIX
+- `ff-asn-group-element`
+    - fixed images not being displayed when used in selected item template
+- `ff-communication`
+    - search result is retrieved from server on every page load when `search-immediate` parameter is set
+    - fixed `use-url-parameter=false` in conjunction with `version=ng` pushing filter and sort parameters to url
+    - `add-params` no longer ignores parameters with duplicate names
+- `ff-slider`
+    - fixed slider deselecting other applied filters
+- `ff-filter-cloud`
+    - fixed duplication of slider entries
+- `ff-checkout-tracking`
+    - fixed checkout tracking for NG
+- `tracking`
+    - fixed `addToCart` tracking for NG - `query` parameter is not sent anymore
+- follow-up fix for navigation tracking
+     - callback is now executed if categoryPath is not found
+- updated internal dependencies and the polyfills to the latest version. This will fix a rare bug which resulted in non functional Web Components with an error message: `Failed to construct CustomElement: The result must not have children`
+
+## IMPROVE
+- `ff-communication`
+    - improved login tracking by reducing requests sent to FACT-Finder
+- `ff-asn-group`
+    - `group` is now available for data binding in searchable ASN context `[slot="filterSearch"]`
+
+## DEPRECATE
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `ff-search-feedback`
+
+
 # 3.10.1
 ## FIX
 - fixed URL encoding of FFNG tracking POST request parameters
