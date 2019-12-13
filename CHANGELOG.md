@@ -1,3 +1,17 @@
+# 3.11.1
+## FIX
+- `ff-slider-control`
+  - `currency-fields` are now used to detect the price type. Using field roles still works and can be used
+- `ff-communication`
+    - fixed a bug where http parameters were duplicated when using `add-params` attribute
+    - fixed a bug where `parameter-whitelist` was only working when `only-search-params` was set
+
+## IMPROVE
+- `ff-communication`
+    - `only-search-params` will now keep `query`, `filter`, `sort`, `page` and `productsPerPage` in the URL in addition to parameters specified in `parameter-whitelist`
+    - default `parameter-whitelist` value was changed from "query,filter" to "" (empty string)
+
+
 # 3.11.0
 ## ADD
 - `core`
