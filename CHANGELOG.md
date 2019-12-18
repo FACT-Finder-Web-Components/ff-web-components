@@ -1,3 +1,9 @@
+# 3.11.2
+## FIX
+- `ff-asn`
+    - fixed `[data-container="removeFilter"]` not working for some FACT-Finder configurations
+
+
 # 3.11.1
 ## FIX
 - `ff-slider-control`
