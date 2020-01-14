@@ -1,6 +1,6 @@
 {
   "name": "ff-web-components",
-  "version": "3.11.2",
+  "version": "3.11.3",
   "authors": [
     "tobias.armbruster"
   ],
@@ -9,8 +9,7 @@
   "keywords": [
     "FACT-Finder"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "license": "FACT-Finder",
   "homepage": "http://web-components.fact-finder.de/",
   "private": true,

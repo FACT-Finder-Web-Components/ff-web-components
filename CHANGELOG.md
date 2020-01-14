@@ -1,3 +1,10 @@
+# 3.11.3
+## FIX
+- `ff-suggest-item`
+    - click on suggest item now correctly targets NG API where applicable
+- category path is now correctly created in navigation tracking while using NG
+
+
 # 3.11.2
 ## FIX
 - `ff-asn`
