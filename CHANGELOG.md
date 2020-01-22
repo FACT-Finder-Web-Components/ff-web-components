@@ -1,3 +1,24 @@
+# 3.11.4
+## FIX
+- `ff-asn-group-slider`
+    - fixed setting minimum (or NaN) value in input[data-control='1'] not clearing the filter for some configurations
+- `ff-suggest-item`
+    - now correctly redirects when in NG environment
+
+## IMPROVE
+- `ff-navigation`
+    - implemented handling of changes to the `subscribe` property after the component has been initialized
+- `ff-communication`
+    - removed unused property `async-facets`
+- `ff-asn-group`
+    - removed unused property `lazy-load`
+- `ff-searchbox`
+    - `before-search` event is now bubbling
+- `ff-searchbutton`
+    - now emits `before-search` event when clicked
+- if no default product per page value is set, the first one from the list will be used as `origPageSize` in click tracking
+
+
 # 3.11.3
 ## FIX
 - `ff-suggest-item`
