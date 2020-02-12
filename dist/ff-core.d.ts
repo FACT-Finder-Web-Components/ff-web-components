@@ -207,10 +207,7 @@ declare module scope.common {
      */
     function getMetaElementKey(element: any): string;
 }
-declare module exportedInternal.esPolyfills {
-    function find(predicate: any, collection: any): any;
-    const flatMap: (f: any) => (arr: any) => any;
-}
+
 declare module scope.communication {
     interface SearchResult {
         channel: string;
@@ -357,6 +354,11 @@ declare module scope.communication {
         useKeywords: string;
         generateAdvisorTree: string;
         disableCache: string;
+        private _cancel;
+        private _searchImmediate;
+        private logger;
+        cancel: () => any;
+        searchImmediate: boolean;
     }
     class FilterEvent extends FFEvent {
         groupName: string;

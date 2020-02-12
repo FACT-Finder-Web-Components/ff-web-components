@@ -1,3 +1,19 @@
+# 3.11.5
+## FIX
+- `tracking`
+    - `event.always` is now called only if it is defined and is of type `function`
+- `ff-record-list`
+    - fixed a bug where `ff-record-list` throws `Cannot read property replace of undefined` when nested inside another component and created via JavaScript at runtime
+
+## IMPROVE
+- `core`
+    - event objects now have a `cancel` method which can be used when a dispatched event should not cause a request to be sent to FACT-Finder
+- `ff-communication`
+    - event dispatched automatically by `ff-communication` with added `searchImmediate` attribute will now receive property `searchImmediate` equal to true
+- `ff-asn`
+    - now supports `subscribe` property
+
+
 # 3.11.4
 ## FIX
 - `ff-asn-group-slider`
