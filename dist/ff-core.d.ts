@@ -398,6 +398,7 @@ declare module scope.communication {
         compareUrl: string;
         similarRecordsUrl: string;
         getRecordsUrl: string;
+        predictiveBasketUrl: string;
     }
     var globalSearchParameter: GlobalSearchParameter;
     var globalCustomUrls: CustomUrls;
@@ -462,6 +463,7 @@ declare module scope.communication {
             "result": string;
             "recommendation": string;
             "similarProducts": string;
+            "predictiveBasket": string;
         };
         function removeRenameRecordFields(keys: any): void;
         function isNg(): boolean;
@@ -733,6 +735,7 @@ declare module scope.communication {
          * @param similarProducts
          */
         function dispatchSimilarProducts(similarProducts: any, event: any): void;
+        function dispatchPredictiveBasket(predictedProducts: any, event: any): void;
         /**
          * Dispatches a Compare.ff response.
          * ex response:

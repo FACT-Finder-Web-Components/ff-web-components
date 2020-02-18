@@ -1,3 +1,9 @@
+# 3.11.5-predictive-basket.1
+## ADD
+- `ff-predictive-basket`
+    - introduced new element
+
+
 # 3.11.5
 ## FIX
 - `tracking`
