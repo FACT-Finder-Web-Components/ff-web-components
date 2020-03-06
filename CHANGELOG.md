@@ -1,3 +1,24 @@
+# 3.12.0
+## ADD
+- `ff-checkout-tracking-item`
+    - added new optional attribute `channel`. Use it to send the tracking request to a channel different from the one defined in `ff-communication`
+
+## FIX
+- `ff-products-per-page-*`
+    - default product per page value can now be selected again after changing to different value
+- `ff-asn-group`
+    - modifications of an element that is used as a `filterSearch` template done after the component is initialized don't influence consecutive ASN rendering anymore
+- `ff-slider-control`
+    - fixed `submit-on-input` property to enable automatic input submit
+    - added `disable-input-fields` property do disable input fields for min and max slider values
+- `ff-slider`
+    - parameter `page` is not sent anymore which was causing incorrect records rendered when `ff-record-list` has been used in combination with `infinite-scrolling`
+    
+## IMPROVE
+- `ff-search-feedback`
+    - migrated to Lit-Element
+
+
 # 3.11.5
 ## FIX
 - `tracking`
