@@ -344,11 +344,6 @@ ff-suggest .ffw-suggestContainerWrapper {
     position: absolute;
 }
 
-ff-suggest .ffw-hideSuggestContainerWrapper {
-    display: none;
-}
-
-
 /* ---- ff-navigation ---- */
 
 ff-navigation {

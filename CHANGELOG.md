@@ -1,3 +1,20 @@
+# 3.12.1
+## FIX
+- `factfinder.common`
+    - `dictToParameterString` is now filtering out functions and objects
+- `ff-header-navigation`
+    - event parameters are now encoded correctly before dispatching when in NG environment
+
+## IMPROVE
+- `ff-suggest` and `ff-suggest-item`
+    - migrated to Lit-Element
+
+## DEPRECATE
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `ff-searchbox.hidesuggestOnblur`
+    - renamed to `hideSuggestOnblur`, corresponding attribute `hidesuggest-onblur` renamed to `hide-suggest-onblur` accordingly
+
+
 # 3.12.0
 ## ADD
 - `ff-checkout-tracking-item`
