@@ -1,3 +1,20 @@
+# 3.13.0
+## ADD 
+- `ff-record-list`
+    - now supports server side rendering through the `ssr` attribute
+
+## FIX
+- `ff-navigation` and `ff-header-navigation`
+    - navigation search request is now encoded properly in NG environment
+    - elements are now working in IE in NG environment
+
+## IMPROVE
+- `ff-slider-control`
+    - `disable-input-fields` uses native HTML `disabled` attribute to disable slider input field
+- `ff-loading-spinner`
+    - migrated to Lit-Element
+
+
 # 3.12.1
 ## FIX
 - `factfinder.common`
