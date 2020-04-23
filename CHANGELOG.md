@@ -1,3 +1,20 @@
+# 3.14.0
+## ADD
+- new element `ff-slider-one-touch`
+
+## FIX
+- `core`
+    - `navigation` event callbacks (i.e. `success`, `fail` and `always`) are now properly called on navigation frame fetch
+- `ff-record-list`
+    - infinite scrolling is now working correctly with `[data-container="infinite-scroll-placeholder"]` added
+    - SSR product list can be updated when appending new records. Previously an error was thrown caused by missing template string
+
+## DEPRECATE
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `ff-record-list` and `ff-record`
+    - the `stamp-always` attribute is now deprecated. Changes in record data is now detected in a more sophisticated manner making indiscriminate re-rendering through `stamp-always` redundant
+
+
 # 3.13.0
 ## ADD 
 - `ff-record-list`
