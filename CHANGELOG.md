@@ -1,3 +1,9 @@
+# 3.14.1
+## FIX
+- `ff-navigation`
+    - navigation did not render at all
+
+
 # 3.14.0
 ## ADD
 - new element `ff-slider-one-touch`
