@@ -1,6 +1,6 @@
 {
   "name": "ff-web-components",
-  "version": "3.14.1",
+  "version": "3.14.1-infinite-scrolling.1",
   "author": "Omikron Data Quality GmbH",
   "description": "Web Components made to easily integrate FACT-Finder in online shops",
   "repository": {
