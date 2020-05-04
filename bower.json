@@ -1,10 +1,8 @@
 {
   "name": "ff-web-components",
   "version": "3.14.1",
-  "authors": [
-    "tobias.armbruster"
-  ],
-  "description": "Web Components made to easily integrate FACT-Finder in onlineshops",
+  "author": "Omikron Data Quality GmbH",
+  "description": "Web Components made to easily integrate FACT-Finder in online shops",
   "main": "./dist/bundle.js",
   "keywords": [
     "FACT-Finder"
