@@ -1,3 +1,26 @@
+# 3.15.0
+## ADD
+- `ff-asn`
+    - introduced `topic` property that allows subscription to a custom topic
+
+## FIX
+- `core`
+   - `globalCommunicationParameter` can now be reassigned in the `factfinder` instance
+- `ff-record-list`
+   - fixed infinite scrolling not working in some rare scenarios when no valid scrollable container was found
+- `ff-checkout-tracking` and `ff-checkout-tracking-item`
+    - `channel` attribute of `ff-checkout-tracking-item` is now used correctly for tracking requests
+    
+## IMPROVE
+- `ff-single-word-search` and `ff-single-word-search-record`
+    - migrated to Lit-Element
+
+## DEPRECATE
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `ff-checkout-tracking`
+    - the `records` property is redundant because it requires JavaScript to be used. If you need to manually do checkout tracking, please refer to [Tracking with JavaScript](https://web-components.fact-finder.de/documentation/3.x/tracking-with-js)
+
+
 # 3.14.1
 ## FIX
 - `ff-navigation`
