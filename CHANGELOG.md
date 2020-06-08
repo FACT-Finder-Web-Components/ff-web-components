@@ -1,3 +1,13 @@
+# 3.15.1
+## FIX
+- `ff-suggest`
+    - added missing `hidden` attribute to empty sections
+
+## IMPROVE
+- `ff-record-list`
+    - Introduced `infinite-scroll-container` attribute. It allows users to explicitly specify the scroll container that contains the record list. If omitted, WebComponents will try to automatically detect the most suitable container.
+
+
 # 3.15.0
 ## ADD
 - `ff-asn`
