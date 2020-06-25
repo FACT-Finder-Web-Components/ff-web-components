@@ -1,3 +1,13 @@
+# 3.15.2
+## FIX
+- `ff-asn-remove-all-filter`
+    - element does not work in NG environment
+
+## CHANGE
+- `core`
+    - changed search result field `articleNumberSearch` (type: `Boolean`, introduced in FF NG) to `resultArticleNumberStatus` (type: `String`, compliant with FF versions prior to FF NG) in NG environment
+
+
 # 3.15.1
 ## FIX
 - `ff-suggest`
