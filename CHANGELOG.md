@@ -1,3 +1,23 @@
+# 3.15.3
+## FIX
+ - `core`
+    - `associatedFieldName` is populated with incorrect values in NG environment
+    - `+` signs in query parameters are no longer converted to `%20` after refreshing the page
+- `ff-asn-group-element`
+    - element sends duplicate requests
+- `ff-filter-cloud`
+    - element displays implicit filters
+- `ff-slider`
+    - emits `search` event unlike other ASN groups which emit `filter`
+    - now emits additional event of type `filter` on submit  
+      NOTE: `search` event is deprecated and should no longer be relied on
+
+## DEPRECATE
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `ff-slider` - `search` event
+    - emitting a `search` event after selecting a value is inconsistent with the rest of filters which emit `filter` events
+
+
 # 3.15.2
 ## FIX
 - `ff-asn-remove-all-filter`
