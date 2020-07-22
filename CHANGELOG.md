@@ -1,3 +1,9 @@
+# 3.15.4
+## FIX
+- `ff-header-navigation`
+    - element's body doesn't open when hovering over navigation item
+
+
 # 3.15.3
 ## FIX
  - `core`
