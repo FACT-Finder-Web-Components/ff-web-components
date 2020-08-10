@@ -1,3 +1,20 @@
+# 3.15.5
+## FIX
+- `ff-suggest-item`
+    - element ignores `deeplink` from the suggest response causing redundant requests to the Records API
+
+## IMPROVE 
+- `ff-slider-one-touch`
+    - min/max markers are now draggable
+    - added purely visual `div.ffw-selected-range` element that spans in the selected range on the slider rail
+
+## EXPERIMENTAL
+_Experimental features are not yet stable and subject to change._
+- `ff-predictive-basket`
+    - introduced new element
+    - activate through setting `factfinder.__experimental.predictiveBasket.enable = true`
+
+
 # 3.15.4
 ## FIX
 - `ff-header-navigation`
