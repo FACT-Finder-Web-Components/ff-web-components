@@ -1,3 +1,15 @@
+# 3.15.6
+## FIX
+- `ff-breadcrumb-trail-item`, `ff-navigation`, `ff-filter-cloud`, `ff-suggest-item`
+    - element does not decode text
+- `ff-slider-one-touch`
+    - `absoluteMinValue` and `absoluteMaxValue` round to incorrect integers
+- `ff-slider`
+    - slider sends request with duplicated parameters with wrong encoding
+- `ff-predictive-basket` _(experimental feature - not yet stable and subject to change)_
+    - returned records have incorrectly formatted prices
+
+
 # 3.15.5
 ## FIX
 - `ff-suggest-item`
