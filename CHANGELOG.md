@@ -1,3 +1,16 @@
+# 3.15.7
+## IMPROVEMENT
+- `core` / SSR
+    - introduced `ResultDispatcher.dispatchRaw(response, topics)` function for manually dispatching responses as they are received from FACT-Finder (to be used in e.g. SSR)
+
+## DEPRECATE
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `ff-communication.useUrlParameter`
+    - renamed to `useUrlParameters`, corresponding attribute `use-url-parameter` renamed to `use-url-parameters` accordingly
+- `core.globalCommunicationParameter.useUrlParameter`
+    - renamed to `useUrlParameters`
+
+
 # 3.15.6
 ## FIX
 - `ff-breadcrumb-trail-item`, `ff-navigation`, `ff-filter-cloud`, `ff-suggest-item`
