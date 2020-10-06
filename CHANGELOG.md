@@ -1,3 +1,13 @@
+# 3.15.8
+## FIX
+- `ff-similar-products`
+    - multiple instances subscribe to the same topic
+- `ff-asn-group`, `ff-asn-group-slider`, `ff-sortbox`, `ff-paging-dropdown`, `ff-products-per-page-dropdown`
+    - element does not expand when a CSS rule keeps part of the container visible
+- `core`
+    - `globalCommunicationParameter` takes incorrect default values when used without `ff-communication`
+
+
 # 3.15.7
 ## IMPROVEMENT
 - `core` / SSR
