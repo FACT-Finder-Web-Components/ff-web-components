@@ -1,3 +1,31 @@
+# 4.0.0-rc.1
+## BREAKING
+- `ff-asn`
+    - `for-group` attribute references associatedFieldName now
+- `ff-communication`
+    - removed attributes `disable-single-hit-redirect` and `single-hit-redirect-base-path`
+- `core`
+    - removed Single Hit Redirect feature
+    - removed `factfinder.communication.FFCommunicationEventAggregator`
+- `ff-searchbox`
+    - removed `hidesuggest-onblur` attribute
+- `ff-record-list`, `ff-record`
+    - removed `stamp-always` attribute
+- `ff-checkout-tracking`
+    - remove `records` property
+- `ff-slider`
+    - no longer emits `search` events
+- `breadcrumb-trail-item`, `single-word-search-record`
+    - removed `clone` method
+- increment default FACT-Finder version from `7.2` to `7.3`
+
+## DEPRECATION
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `new factfinder.communication.Tracking12()` and `factfinder.communication.trackingManager`
+    - replaced by static namespace `factfinder.communication.Tracking`
+    - instantiation is no longer required
+
+
 # 3.15.8
 ## FIX
 - `ff-similar-products`
