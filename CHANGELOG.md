@@ -1,3 +1,10 @@
+# 3.15.9
+## FIX
+- `ff-checkout-tracking`
+    - element sends `query` in the tracking request
+    - element sends `null` as a price
+
+
 # 3.15.8
 ## FIX
 - `ff-similar-products`
