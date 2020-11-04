@@ -1,3 +1,31 @@
+# 4.0.0-rc.2
+## ADD
+- FACT-Finder NG API v4 support
+    - activate it through the `ff-communication` element
+      ```html
+      <ff-communication version="ng" api="v4"></ff-communication>
+      ```
+    - Customer Specific Pricing (CSP) through new `purchaser-id` attribute on `ff-communication`
+      ```html
+      <ff-communication version="ng" api="v4" purchaser-id="123456"></ff-communication>
+      ```
+    - `ff-campaign-product` got new attribute `id-type`. It can be set to either `productNumber` or `id`
+      ```html
+      <ff-campaign-product record-id="1234" id-type="productNumber"></ff-campaign-product>
+      ```
+
+## FIX
+- `ff-checkout-tracking`
+    - element sends `query` in the tracking request
+    - element sends `null` as a price
+- `core`
+    - `navigation` event's `endLevel` defaults to `"null"`
+
+## IMPROVE
+- `ff-slider-one-touch`
+    - `touchstart` listeners are now passive
+
+
 # 4.0.0-rc.1
 ## BREAKING
 - `ff-asn`
