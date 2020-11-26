@@ -1,3 +1,33 @@
+# 4.0.0-rc.3
+## BREAKING
+- `ff-communication`
+    - `version` default value removed. `version` must now always be specified
+    - `api` default value removed. `api` must now always be specified when `version="ng"`
+
+## ADD
+- `ff-campaign-pushed-products`
+    - introduced new attribute `is-landing-page` which can be used in combination with `ff-campaign-landing-page` element
+- `tracking`
+    - introduced new form of tracking: `LandingPageClick`
+
+## FIX
+- `ff-similar-products`
+    - element got new attribute `id-type`. It can be set to either `productNumber` or `id`. This attribute is mandatory when using FACT-Finder NG
+      ```html
+      <ff-similar-products record-id="1234" id-type="productNumber"></ff-similar-products>
+      ```
+- `ff-navigation`, `ff-header-navigation`
+    - elements do not render nested elements
+- tracking
+    - click tracking does not send correct query using NG
+- `ff-asn-group`
+    - element sends redundant category filters in NG when resetting filter
+- `ff-sortbox`
+    - prevent templates from being parsed more than once
+- `productDetail` and `getRecords` now emit cancellable `before-*` events (`before-productDetail`, `before-getRecords`); previously a generic `before-search` event was emitted
+    - cancellable through `preventDefault()`
+
+
 # 4.0.0-rc.2
 ## ADD
 - FACT-Finder NG API v4 support
