@@ -1,3 +1,18 @@
+# 3.15.10
+## FIX
+- `ff-similar-products`
+    - element got new attribute `id-type`. It can be set to either `productNumber` or `id`. This attribute is mandatory when using FACT-Finder NG
+      ```html
+      <ff-similar-products record-id="1234" id-type="productNumber"></ff-similar-products>
+      ```
+- `ff-sortbox`
+    - prevent templates from being parsed more than once
+- tracking
+    - click tracking does not send correct query using NG
+- `ff-suggest`
+    - suggest types containing whitespace are not supported
+
+
 # 3.15.9
 ## FIX
 - `ff-checkout-tracking`
