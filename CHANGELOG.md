@@ -1,3 +1,11 @@
+# 3.15.11
+## FIX
+- `ff-products-per-page-dropdown`, `ff-products-per-page-list`, `ff-products-per-page-select`
+  - element does not remove `page` parameter when one of its items is selected
+- tracking
+    - click tracking throws an error when category filter is missing using FACT-Finder NG
+
+
 # 3.15.10
 ## FIX
 - `ff-similar-products`
