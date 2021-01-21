@@ -1,3 +1,11 @@
+# 3.15.12
+## FIX
+- tracking
+    - cart tracking sends an invalid request when a custom price field name is used and localization is enabled
+- `ff-searchbox`
+    - element renders `undefined` if `ff-communication` attribute `default-query` is set to empty string or set without any value
+
+
 # 3.15.11
 ## FIX
 - `ff-products-per-page-dropdown`, `ff-products-per-page-list`, `ff-products-per-page-select`
