@@ -1,3 +1,13 @@
+# 3.15.13
+## FIX
+- `ff-communication`
+    - element sends an invalid search request when an empty or whitespace-only string is set to the attribute `default-query` while `search-immediate` is in use
+- `ff-similar-products`
+    - attribute `max-results` does not work in NG
+- `ff-recommendation`
+    - click tracking sends invalid request
+
+
 # 3.15.12
 ## FIX
 - tracking
