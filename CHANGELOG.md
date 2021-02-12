@@ -1,3 +1,94 @@
+# 4.0.0
+## BREAKING
+- `ff-communication`
+  - `version` default value removed. `version` must now always be specified
+  - `api` default value removed. `api` must now always be specified when `version="ng"`
+  - removed attributes `disable-single-hit-redirect` and `single-hit-redirect-base-path`
+- `ff-searchbox`
+  - removed `hidesuggest-onblur` attribute
+- `ff-record-list`, `ff-record`
+  - removed `stamp-always` attribute
+- `ff-asn`
+  - `for-group` attribute references `associatedFieldName` now
+- `ff-slider`
+  - no longer emits `search` events
+- `ff-breadcrumb-trail-item`, `ff-single-word-search-record`
+  - removed `clone` method
+- `ff-checkout-tracking`
+  - remove `records` property
+- `core`
+  - removed _Single Hit Redirect_ feature
+  - removed `factfinder.communication.FFCommunicationEventAggregator`
+  - prices in `getRecords` response are localized now
+
+## ADD
+- FACT-Finder NG API **v4** support
+  - activate it through the `ff-communication` element
+    ```html
+    <ff-communication version="ng" api="v4"></ff-communication>
+    ```
+  - Customer Specific Pricing (CSP) through new `purchaser-id` attribute on `ff-communication`
+    ```html
+    <ff-communication version="ng" api="v4" purchaser-id="123456"></ff-communication>
+    ```
+  - `ff-campaign-product` got new attribute `id-type`. It can be set to either `productNumber` or `id`
+    ```html
+    <ff-campaign-product record-id="1234" id-type="productNumber"></ff-campaign-product>
+    ```
+- `ff-campaign-pushed-products`, `ff-campaign-feedbacktext`
+  - introduced new attribute `is-landing-page-campaign` which can be used in combination with the `ff-campaign-landing-page` element
+- Tracking
+  - introduced new form of tracking: `LandingPageClick`
+
+## FIX
+- `ff-communication`
+  - `navigation="true"` in `add-params` doesn't send a navigation request
+  - element sends an invalid search request when a whitespace or empty string is set to the attribute `default-query` and `search-immediate` is in use
+- `ff-searchbox`
+  - element renders `undefined` if `ff-communication` attribute `default-query` is set to empty string or set without any value
+- `ff-suggest`
+  - suggest types containing whitespace are not supported
+- `ff-asn-group`
+  - element sends redundant category filters in NG when resetting filter
+- `ff-recommendation`
+  - click tracking sends invalid request
+- `ff-similar-products`
+  - attribute `max-results` does not work in NG
+  - element got new attribute `id-type`. It can be set to either `productNumber` or `id`. This attribute is mandatory when using FACT-Finder NG
+    ```html
+    <ff-similar-products record-id="1234" id-type="productNumber"></ff-similar-products>
+    ```
+- `ff-navigation`, `ff-header-navigation`
+  - elements do not render nested elements
+- `ff-sortbox`
+  - prevent templates from being parsed more than once
+- `ff-products-per-page-dropdown`, `ff-products-per-page-list`, `ff-products-per-page-select`
+  - element does not remove `page` parameter when one of its items is selected
+- request types `productDetail` and `getRecords` now emit cancellable `before-*` events (`before-productDetail`, `before-getRecords`); previously a generic `before-search` event was emitted
+  - cancellable through `preventDefault()`
+- `ff-checkout-tracking`
+  - element sends `query` in the tracking request
+  - element sends `null` as a price
+- Tracking
+  - click tracking does not send correct query using NG
+  - click tracking throws an error when category filter is missing using FACT-Finder NG
+  - cart tracking sends an invalid request when a custom price field name is used and localization is enabled
+- `core`
+  - doesn't emit an error when `sid` is not exactly 30 characters length
+  - campaign requests don't consider `purchaserId`
+  - `navigation` event's `endLevel` defaults to `"null"`
+
+## IMPROVE
+- `ff-slider-one-touch`
+  - `touchstart` listeners are now passive
+
+## DEPRECATION
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `new factfinder.communication.Tracking12()` and `factfinder.communication.trackingManager`
+  - replaced by static namespace `factfinder.communication.Tracking`
+  - instantiation is no longer required
+
+
 # 4.0.0-rc.3
 ## BREAKING
 - `ff-communication`
