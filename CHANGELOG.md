@@ -1,3 +1,14 @@
+# 4.0.1
+## FIX
+- `ff-suggest-item`
+  - item's title gets overwritten with HTML for hit highlighting
+  - clicking product suggestion does not redirect to PDP with API v4
+- `core`
+  - price is localized twice if field with role `price` is set in `currency-fields`
+- `ff-communication`
+  - `add-params` overwrites manually selected filters
+
+
 # 4.0.0
 ## BREAKING
 - `ff-communication`
