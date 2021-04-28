@@ -1,3 +1,10 @@
+# 4.0.2
+## FIX
+- `ff-asn` /`ff-slider-one-touch`
+  - handles can cross each other
+  - fixed triangle's positioning
+
+
 # 4.0.1
 ## FIX
 - `ff-suggest-item`
