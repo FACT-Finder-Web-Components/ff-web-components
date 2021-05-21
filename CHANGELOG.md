@@ -1,3 +1,9 @@
+# 4.0.3
+## FIX
+- `ff-asn`
+  - filter request drops `hitsPerPage` parameter previously set by `ff-products-per-page-*` elements
+
+
 # 4.0.2
 ## FIX
 - `ff-asn` /`ff-slider-one-touch`
