@@ -1,3 +1,28 @@
+# 4.0.4
+## FIX
+- `core`
+  - Additional price fields specified in the `ff-communication`'s `currency-fields` attribute are not localized in the asn groups
+- Negative filters in NG are not taken into account
+- Clearing `localStorage` at runtime breaks the application
+- Tracking
+  - Click tracking sends invalid query for navigation searches in NG  
+    This happens with the setup of `<ff-communication add-params="navigationtrue,filter=(category-filter)">`  
+    This setup still leads to the wrong behaviour. Instead, use the new `category-page` attribute to implement category pages.
+- `ff-sortbox`, `ff-sortbox-select`
+  - Duplicated sort descriptions are causing the wrong fields to be used for sorting
+
+## IMPROVE
+- Category pages (requires `version="ng"`)
+  - Add `category-page` attribute to `ff-communication` to enable a more stable implementation of category pages
+- `ff-asn-group-element`
+  - element renders `[fixed]` and `[implicit]` attributes according to selection type to allow more distinguishable styling
+
+## DEPRECATE
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `ff-asn-remove-filter`
+  - `keep-category-path` is no longer required to implement category pages. Use the new attribute `category-page` on `ff-communication` instead
+
+
 # 4.0.3
 ## FIX
 - `ff-asn`
