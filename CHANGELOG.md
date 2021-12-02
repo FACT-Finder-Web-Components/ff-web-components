@@ -1,3 +1,18 @@
+# 4.0.5
+## FIX
+- `ff-suggest`
+  - queries containing a `%` character (e.g. `100%`) cause an error
+- `ff-searchbox`
+  - user input that happens before the component initialises is overwritten
+- `marketId` and other sorting and products-per-page related parameters appear in URL even though `use-url-parameters="false"`
+- character encodings in `category-page` are case-sensitive
+
+## IMPROVE
+- `ff-communication`
+  - add `market-id` attribute as it wasn't handled correctly by `add-params`
+  - `marketId` now also available in `factfinder.communication.globalSearchParameter.marketId`
+
+
 # 4.0.4
 ## FIX
 - `core`
