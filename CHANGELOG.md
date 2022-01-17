@@ -1,3 +1,16 @@
+# 4.0.6
+## FIX
+- Navigating back throws an error in the console
+- Manually configured field roles are overridden by those from the FACT-Finder's response
+- `ff-suggest`, `ff-compare`, `ff-similar-products`, `ff-recommendation`
+  - field roles received from response for these requests are not mapped from NG format
+
+## IMPROVE
+- Add `title` property to cart and checkout tracking requests
+- `ff-slider-one-touch`, `ff-slider`
+  - Selected values can exceed absolute min/max values
+
+
 # 4.0.5
 ## FIX
 - `ff-suggest`
