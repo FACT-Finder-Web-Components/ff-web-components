@@ -1,3 +1,11 @@
+# 4.0.7
+## FIX
+- Incorrect encoding in category path of "+" and "%"
+
+## IMPROVE
+- Add `userId` parameter to relevant non-tracking requests for better personalization and recommendation results.
+
+
 # 4.0.6
 ## FIX
 - Navigating back throws an error in the console
