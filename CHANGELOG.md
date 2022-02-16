@@ -1,3 +1,8 @@
+# 4.0.8
+## FIX
+- Incorrect recognition of fixed filters that have special purpose characters
+
+
 # 4.0.7
 ## FIX
 - Incorrect encoding in category path of "+" and "%"
