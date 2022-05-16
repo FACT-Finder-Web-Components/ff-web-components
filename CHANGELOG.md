@@ -1,3 +1,14 @@
+# 4.0.9
+## FIX
+- Encoding of `category-page` is case-sensitive
+- Cannot read associatedFieldName from empty category facet
+- Slash in non-category filter is misinterpreted
+
+## IMPROVE
+- `useAsn` is now configurable for requests _paging_, _sorting_ and _ppp_. It used to be always `false` for better performance.
+  - Example: `factfinder.communication.EventAggregator.addFFEvent({ type: "ppp", value: 50, useAsn: true })`
+
+
 # 4.0.8
 ## FIX
 - Incorrect recognition of fixed filters that have special purpose characters
