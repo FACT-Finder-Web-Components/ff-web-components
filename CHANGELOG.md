@@ -1,3 +1,9 @@
+# 4.0.10
+## FIX
+- `ff-communication`
+  - Double encoding of `default-query`
+
+
 # 4.0.9
 ## FIX
 - Encoding of `category-page` is case-sensitive
