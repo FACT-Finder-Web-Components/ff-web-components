@@ -1,3 +1,16 @@
+# 4.1.0
+## ADD
+- FACT-Finder NG API **v5** support
+  - `ff-communication` now supports the `api="v5"` parameter
+- Deferred Attribute Resolving
+  - elements `ff-asn-group-element`, `ff-record`, `ff-suggest-item` and `ff-template` received the new attribute `data-ffw-defer`
+  - You can specify attributes that shall be set only after data binding is available.
+    This is particularly useful for `img`'s `src` and `picture`'s `srcset` attributes to prevent the browser from requesting a raw data binding string as a source.
+  - This feature works very similar to _Image Binding_ but is a generic solution that works with any attribute.
+- `ff-slider-control`
+  - `decimal-places` attribute
+
+
 # 4.0.10
 ## FIX
 - `ff-communication`
