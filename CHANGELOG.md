@@ -1,3 +1,9 @@
+# 4.1.1
+## FIX
+- landing page campaign clicks track wrong product number
+- campaign data cannot be read because of incorrect conversion
+
+
 # 4.1.0
 ## ADD
 - FACT-Finder NG API **v5** support
