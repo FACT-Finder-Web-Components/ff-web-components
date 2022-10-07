@@ -1,3 +1,30 @@
+# 4.2.0
+## ADD
+- Advanced login state and session handling
+  - Precisely synchronize users' login status between Web Components and your shop system for best results in login tracking.
+  - Manually start a new FACT-Finder session whenever necessary.
+  - New API:
+    - `ff-communication` element issues new `ffCommunicationReady` event on `document`
+      ```js
+      document.addEventListener(`ffCommunicationReady`, ({ factfinder, searchImmediate }) => { /* ... */ })
+      ```
+    - `factfinder.communication.sessionManager.setLoginData(userId)`
+    - `factfinder.communication.sessionManager.clearLoginData()`
+    - `factfinder.communication.sessionManager.clearAllSessionData()`
+    - `factfinder.communication.Tracking.loginWithConfig()`
+
+## IMPROVE
+- Detection of selected facet elements
+  - Correct detection is important to display `ff-asn-group`'s "removeFilter" container.
+  - Web Components now supports FACT-Finder setups that use the "MergeSelectedAndUnselected" Custom Class.
+
+## FIX
+- `ff-suggest`
+  - suggest does not react to "+" character
+- `ff-products-per-page-dropdown`
+  - element does not close after second expansion
+
+
 # 4.1.1
 ## FIX
 - landing page campaign clicks track wrong product number
