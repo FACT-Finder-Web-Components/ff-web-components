@@ -1,3 +1,10 @@
+# 4.2.1
+# FIX
+- `ff-slider-one-touch`
+  - Element width is calculated incorrectly.
+  - This error was introduced in version `4.2.0`.
+
+
 # 4.2.0
 ## ADD
 - Advanced login state and session handling
