@@ -1,5 +1,11 @@
+# 4.2.2
+## FIX
+- `ff-campaign-advisor`
+  - Usage together with `category-page` creates invalid request.
+
+
 # 4.2.1
-# FIX
+## FIX
 - `ff-slider-one-touch`
   - Element width is calculated incorrectly.
   - This error was introduced in version `4.2.0`.
