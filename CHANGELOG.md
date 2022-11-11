@@ -1,3 +1,8 @@
+# 4.2.3
+## FIX
+- `ff-header-navigation` does not display groups with encodable characters
+
+
 # 4.2.2
 ## FIX
 - `ff-campaign-advisor`
