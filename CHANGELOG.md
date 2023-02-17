@@ -1,3 +1,14 @@
+# 4.2.4
+## FIX
+- `ff-campaign-advisor`
+  - search query is incorrectly encoded after clicking on answer
+
+## IMPROVEMENT
+- `ff-suggest`
+  - introduced new attribute `hide-onblur` as an alternative to `ff-searchbox`'s `hide-suggest-onblur`. The new
+    attribute will not hide `ff-suggest` when its descendant elements are clicked.
+
+
 # 4.2.3
 ## FIX
 - `ff-header-navigation` does not display groups with encodable characters
