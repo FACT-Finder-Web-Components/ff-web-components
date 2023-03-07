@@ -1,3 +1,13 @@
+# 4.2.5
+## FIX
+- `ff-asn-group`
+  - `removeFilter` does not clear `page` parameter
+- `ff-asn-remove-all-filter`
+  - element does not clear `page` parameter
+- `ff-slider`, `ff-slider-one-touch`
+  - slider does not clear `page` parameter
+
+
 # 4.2.4
 ## FIX
 - `ff-campaign-advisor`
