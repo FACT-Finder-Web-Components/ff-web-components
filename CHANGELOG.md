@@ -1,3 +1,9 @@
+# 4.2.6
+## FIX
+- `ff-sortbox`, `ff-sortbox-select`
+  - sortbox adds obsolete parameters `name` and `order` to navigation requests
+
+
 # 4.2.5
 ## FIX
 - `ff-asn-group`
