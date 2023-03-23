@@ -1,3 +1,9 @@
+# 4.3.0-beta.1
+## ADD
+- `ff-record-list-scrolling`
+  - New element that supports infinite scrolling in both directions.
+
+
 # 4.2.6
 ## FIX
 - `ff-sortbox`, `ff-sortbox-select`
