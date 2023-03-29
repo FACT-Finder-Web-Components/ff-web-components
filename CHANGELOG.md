@@ -1,3 +1,9 @@
+# 4.3.0-beta.2
+## IMPROVE
+- `ff-record-list-scrolling`
+  - add config for custom placeholder data
+
+
 # 4.3.0-beta.1
 ## ADD
 - `ff-record-list-scrolling`
