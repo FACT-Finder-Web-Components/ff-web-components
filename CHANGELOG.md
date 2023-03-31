@@ -1,3 +1,16 @@
+# 4.3.0-beta.3
+## BREAKING
+- `ff-record-list-scrolling`
+  - renamed attribute `max-pages` to `max-infinite-pages`
+  - renamed attribute `max-pages-prev` to `max-infinite-pages-prev`
+
+## IMPROVE
+- `ff-record-list-scrolling`
+  - element emits `dom-updated` event after receiving data
+  - introduced attributes `pages-until-infinite` and `pages-until-infiniteprev`
+    - these define how many times a user has to click "show more" before infinite scrolling activates
+
+
 # 4.3.0-beta.2
 ## IMPROVE
 - `ff-record-list-scrolling`
