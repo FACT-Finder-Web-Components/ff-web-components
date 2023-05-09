@@ -1,3 +1,19 @@
+# 4.2.7
+## FIX
+- `ff-record-list`
+  - SSR setup throws error when there are no records
+
+## IMPROVEMENT
+- `ff-record-list`
+  - Add option to define records insertion point when in SSR-mode.
+    This ensures proper record insertion when the SSR result is empty.
+    ```html
+    <ff-record-list ssr>
+        <template data-role="records-insertion-point"></template>
+    </ff-record-list>
+    ```
+
+
 # 4.2.6
 ## FIX
 - `ff-sortbox`, `ff-sortbox-select`
