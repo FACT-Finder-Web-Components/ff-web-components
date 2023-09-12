@@ -1,3 +1,13 @@
+# 4.2.8
+## FIX
+- `ff-similar-products`
+  - Request contains redundant parameters.
+
+## IMPROVEMENT
+- `ff-asn`
+  - Add support for AND filters.
+
+
 # 4.2.7
 ## FIX
 - `ff-record-list`
