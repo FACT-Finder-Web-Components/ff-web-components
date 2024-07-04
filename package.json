@@ -1,6 +1,6 @@
 {
   "name": "ff-web-components",
-  "version": "4.2.8",
+  "version": "5.0.0-pre.1",
   "author": "Omikron Data Quality GmbH",
   "description": "Web Components made to easily integrate FACT-Finder in online shops",
   "repository": {

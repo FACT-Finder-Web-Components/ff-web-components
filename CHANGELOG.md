@@ -1,3 +1,9 @@
+# 5.0.0-pre.1
+## BREAKING
+- The core API of Web Components has been completely rewritten.
+  Refer to the migration guide for details.
+
+
 # 4.2.8
 ## FIX
 - `ff-similar-products`
