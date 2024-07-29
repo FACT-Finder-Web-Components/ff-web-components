@@ -1,3 +1,8 @@
+# 5.0.0-pre.2
+## FIX
+- Configuration state does not update field roles.
+
+
 # 5.0.0-pre.1
 ## BREAKING
 - The core API of Web Components has been completely rewritten.
