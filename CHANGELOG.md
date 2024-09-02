@@ -1,3 +1,8 @@
+# 5.0.0-pre.3
+## FIX
+- Suggest click throws errors in some browsers.
+
+
 # 5.0.0-pre.2
 ## FIX
 - Configuration state does not update field roles.
