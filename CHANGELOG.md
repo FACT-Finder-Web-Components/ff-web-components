@@ -1,3 +1,11 @@
+# 5.0.0-pre.4
+## IMPROVEMENT
+- Custom Elements polyfill is now optional.
+
+## FIX
+- Cannot unset _FFParams_ and _AppConfig_ at `factfinder.config` during runtime.
+
+
 # 5.0.0-pre.3
 ## FIX
 - Suggest click throws errors in some browsers.
