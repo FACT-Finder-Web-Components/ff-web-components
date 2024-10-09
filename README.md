@@ -57,7 +57,20 @@ See the end of this migration guide for a visual representation of these pipelin
 
 ## Including the library
 
-The way the library is referenced from your project has not changed.
+The fundamental way the library is referenced from your project has not changed.
+
+What is new is that the Custom Elements polyfill is now **optional**.
+
+```html
+<head>
+  <!-- These two references are now optional.
+       They are only required if you must support very old browsers that do not support Custom Elements. -->
+  <!-- <script src="../dist/vendor/custom-elements-es5-adapter.js"></script> -->
+  <!-- <script src="../dist/vendor/webcomponents-loader.js"></script> -->
+
+  <script defer src="../dist/bundle.js"></script>
+</head>
+```
 
 
 ## Getting access to the Core
@@ -115,7 +128,7 @@ factfinder: {
         campaignShoppingCart: (Required CampaignShoppingCartParams, Optional RequestOptions) => Promise CampaignsResult,
         navigation: (Required NavigationParams, Optional NavigationOptions) => Promise Result,
         navigationCategory: (Required NavigationCategoryParams, Optional RequestOptions) => Promise CategoryNavigation,
-        predictiveBasket: Required PredictiveBasketParams, Optional RequestOptions) => Promise PredictiveBasketResult,
+        predictiveBasket: (Required PredictiveBasketParams, Optional RequestOptions) => Promise PredictiveBasketResult,
         recommendation: (Required RecommendationParams, Optional RequestOptions) => Promise RecommendationResultWithFieldRoles,
         records: (Required RecordsParams, Optional RequestOptions) => Promise FlatRecordsResult,
         search: (Required SearchParams, Optional SearchOptions) => Promise Result,
@@ -403,9 +416,9 @@ The function takes an object with the following fields:
 ```js
 // All fields are optional.
 factfinder.config.setFFParams({
-    purchaserId,  // String
-    sid,          // String
-    userId,       // String
+    purchaserId,  // String (pass `undefined` to unset value)
+    sid,          // String (pass `undefined` to unset value)
+    userId,       // String (pass `undefined` to unset value)
 });
 ```
 
@@ -416,11 +429,11 @@ It takes an object with the following fields:
 // All fields are optional.
 factfinder.config.setAppConfig({
     autoFetch,        // String enum
-    categoryPage,     // Array of _Filter_ objects as defined by the FF API
-    dataBindingTags,  // Array of String
+    categoryPage,     // Array of _Filter_ objects as defined by the FF API (pass `undefined` to unset value)
+    dataBindingTags,  // Array of String (pass `undefined` to unset value)
     debug,            // Boolean
-    fieldRoles,       // Object
-    formatting: {
+    fieldRoles,       // Object (pass `undefined` to unset value)
+    formatting: {     // Object (pass `undefined` to unset value)
         locale,         // String
         formatOptions,  // Same as `options` object in platform-native `Intl.NumberFormat(locales, options)`.
     },
@@ -1274,6 +1287,7 @@ The data format provided in HTML templates changed from `TypedFlatRecord` to `Re
 #### Attributes
 
 `usePerso` was renamed to `usePersonalization` to match the parameter name in the FactFinder API.
+The default value is now `true` as defined by the FactFinder API.
 
 `subscribe` was removed.
 `ff-recommendation` receives data exclusively from requests issued by itself.
