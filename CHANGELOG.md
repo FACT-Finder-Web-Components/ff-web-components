@@ -1,3 +1,22 @@
+# 4.3.0
+## ADD
+- Auto-fetch
+  - The **auto-fetch** feature allows you to globally define how Web Components shall behave when added to the DOM.
+    They may do nothing or immediately render relevant data from the last request.
+- `core`
+  - Introduced `globalCommunicationParameter.autoFetch` enum property with 3 possible values: `SsrOnly` (default), `AlwaysOn` and `AlwaysOff`.
+    - Available under `factfinder.enums.AutoFetch`.
+  - Introduced `ResultDispatcher.dispatchSSR(response, topics)` function that provides reliable SSR rendering on both regular pages and pages with modular rendering.
+
+## FIX
+- `ff-slider-control`
+  - Hitting the ENTER key in an input element now reads both min and max values to build the request.
+
+## DEPRECATION
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `ResultDispatcher.dispatchRaw(response, topics)`, use the new `ResultDispatcher.dispatchSSR(response, topics)` instead.
+
+
 # 4.2.8
 ## FIX
 - `ff-similar-products`
