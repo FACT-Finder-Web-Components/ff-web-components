@@ -1,3 +1,10 @@
+# 5.0.0-pre.5
+## FIX
+- 'before-handlers' of the request pipeline may cause data integrity issues.
+- `ff-checkout-tracking`
+  - Explicitly specified price on DOM elements takes precedence over auto-supplemented data again.
+
+
 # 5.0.0-pre.4
 ## IMPROVEMENT
 - Custom Elements polyfill is now optional.
