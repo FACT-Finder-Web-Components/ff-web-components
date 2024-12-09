@@ -1,3 +1,8 @@
+# 5.0.0-pre.6
+## FIX
+- POST requests always throw an exception.
+
+
 # 5.0.0-pre.5
 ## FIX
 - 'before-handlers' of the request pipeline may cause data integrity issues.
