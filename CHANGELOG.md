@@ -1,3 +1,12 @@
+# 5.0.0
+## BREAKING
+- The core API of Web Components has been completely rewritten.
+  Additionally, a few improvements to Web Components' HTML elements have been introduced.
+  Refer to the [Migration Guide](https://github.com/FACT-Finder-Web-Components/ff-web-components/blob/release/5.x/README.md#migration-guide-migrating-from-4x) for details.
+- The new core focuses on clarity of data flow and overall customizability while minimizing assumptions of usage scenarios.
+- Strict input validation ensures app state integrity and prevents nonsensical requests to FactFinder.
+
+
 # 5.0.0-pre.6
 ## FIX
 - POST requests always throw an exception.
@@ -32,6 +41,25 @@
 ## BREAKING
 - The core API of Web Components has been completely rewritten.
   Refer to the migration guide for details.
+
+
+# 4.3.0
+## ADD
+- Auto-fetch
+  - The **auto-fetch** feature allows you to globally define how Web Components shall behave when added to the DOM.
+    They may do nothing or immediately render relevant data from the last request.
+- `core`
+  - Introduced `globalCommunicationParameter.autoFetch` enum property with 3 possible values: `SsrOnly` (default), `AlwaysOn` and `AlwaysOff`.
+    - Available under `factfinder.enums.AutoFetch`.
+  - Introduced `ResultDispatcher.dispatchSSR(response, topics)` function that provides reliable SSR rendering on both regular pages and pages with modular rendering.
+
+## FIX
+- `ff-slider-control`
+  - Hitting the ENTER key in an input element now reads both min and max values to build the request.
+
+## DEPRECATION
+_Usage of these features is no longer recommended. They are going to be **removed** in a future version._
+- `ResultDispatcher.dispatchRaw(response, topics)`, use the new `ResultDispatcher.dispatchSSR(response, topics)` instead.
 
 
 # 4.2.8
