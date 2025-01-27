@@ -1,3 +1,11 @@
+# 5.0.1
+## FIX
+- `ff-asn-group-slider`
+  - Default template did not work.
+  - One Touch Slider had absolutely positioned elements blocking surroundings.
+  - Manual input allowed min value to be greater than max value and vice versa.
+
+
 # 5.0.0
 ## BREAKING
 - The core API of Web Components has been completely rewritten.
