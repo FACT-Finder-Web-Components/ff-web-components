@@ -1,3 +1,15 @@
+# 5.1.0
+## FEATURE
+- Popular Searches
+  - Activate with new attribute `<ff-searchbox popular-searches>`
+  - Rendering happens through `ff-suggest` with new template slot `<template data-role="popular-searches">`
+
+## IMPROVEMENT
+- `ff-suggest`
+  - The suggestions template is now defined through `<template data-role="suggestions">`.
+  - The old approach remains available for compatibility but is no longer documented.
+
+
 # 5.0.1
 ## FIX
 - `ff-asn-group-slider`
