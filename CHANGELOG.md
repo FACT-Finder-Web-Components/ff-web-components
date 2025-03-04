@@ -1,3 +1,10 @@
+# 5.1.1
+## IMPROVEMENT
+- Add support for new FactFinder fields
+  - `filterWarning` (`Filter`)
+  - `showPermutedSearchParams` (`NavigationCategoryParams`, `NavigationParams`, `SearchParams`, `SuggestParams`)
+
+
 # 5.1.0
 ## FEATURE
 - Popular Searches
