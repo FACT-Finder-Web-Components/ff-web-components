@@ -1,3 +1,8 @@
+# 5.1.2
+## FIX
+- `skipBeforeHandlers` flag is ignored in search and navigation requests.
+
+
 # 5.1.1
 ## IMPROVEMENT
 - Add support for new FactFinder fields
