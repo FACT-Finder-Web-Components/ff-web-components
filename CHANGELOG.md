@@ -1,3 +1,11 @@
+# 5.1.3
+## IMPROVEMENT
+- Add `filter` field to campaign params (`CampaignPageParams`, `CampaignProductParams`, `CampaignShoppingCartParams`) to mirror updated FactFinder REST API.
+- Add support for new REST API parameter `useVectorSearchMode` in `SearchControlParams`.
+- Add option to specify HTML templates through different syntax to avoid clashes with 3rd party frameworks.
+  - Available in `ff-record-list` and `ff-suggest`.
+
+
 # 5.1.2
 ## FIX
 - `skipBeforeHandlers` flag is ignored in search and navigation requests.
