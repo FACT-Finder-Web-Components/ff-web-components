@@ -1,3 +1,9 @@
+# 5.1.4
+## IMPROVEMENT
+- URL manipulation
+  - Add search parameters `showMarkets` and `showPermutedSearchParams` to default block-list of URL writing. These parameters are rather internal in their nature and typically should not appear in the URL.
+
+
 # 5.1.3
 ## IMPROVEMENT
 - Add `filter` field to campaign params (`CampaignPageParams`, `CampaignProductParams`, `CampaignShoppingCartParams`) to mirror updated FactFinder REST API.
