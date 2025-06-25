@@ -1,3 +1,8 @@
+# 5.1.5
+## FIX
+- Hitting the ENTER key on an item in `ff-record-list` does not navigate to detail page.
+
+
 # 5.1.4
 ## IMPROVEMENT
 - URL manipulation
