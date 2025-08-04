@@ -1,3 +1,18 @@
+# 5.1.6
+## FIX
+- Implementation of `followSearch` parameter
+  - _Paging_ and _products-per-page_ elements did not send `followSearch` after initial request.
+  - `ff-searchbox` erroneously sent it for search and suggestions when it shouldn't.
+
+## IMPROVEMENT
+- `ff-asn-group`, `ff-asn-group-slider`
+  - Set default style to `visibility:hidden` on collapsed groups. This takes nested elements out of the tabindex chain. `display:none` cannot be used because it breaks the recalculation of the slider's position.
+- Add latest REST API parameter `exactSearchMode` to `SearchParams` and `SuggestParams`.
+- URL manipulation
+  - Add option to only partially block the category filter's path from being written to the URL. This is important on category pages where a part of the category path is already in the URL's static path while deeper filter levels shall remain dynamic.
+  - Affected APIs are: `routing.setUrlParamOptionsListener` and `utils.env.searchParamsFromUrl`.
+
+
 # 5.1.5
 ## FIX
 - Hitting the ENTER key on an item in `ff-record-list` does not navigate to detail page.
