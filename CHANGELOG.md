@@ -1,3 +1,14 @@
+# 5.1.7
+## FIX
+- Always use absolute URLs for history updates.
+    - This avoids unexpected URLs when a base path is configured with the `<base>` tag.
+
+## IMPROVEMENT
+- Implement handling of URL fragment during URL generation.
+- Implement `liveRankingRules` parameter
+    - Appears in `SearchParams`, `NavigationParams`, `SuggestParams`
+
+
 # 5.1.6
 ## FIX
 - Implementation of `followSearch` parameter
