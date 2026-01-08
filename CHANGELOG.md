@@ -1,3 +1,12 @@
+# 5.1.8
+## FIX
+- Suggest
+    - Suggest does not close when using TAB key to jump out of search box.
+    - When using `suggest-onfocus` on `ff-searchbox`, the last Suggest result is reused without issuing a new request.
+    - Suggest no longer remains open under certain conditions when it should close.
+- Click, cart and checkout tracking did not include campaign ID.
+
+
 # 5.1.7
 ## FIX
 - Always use absolute URLs for history updates.
