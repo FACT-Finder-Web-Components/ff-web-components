@@ -1,3 +1,31 @@
+# 5.2.0
+## FEATURE
+- Recently Viewed Products
+  - Introduced a new component `ff-recently-viewed` to display the user's most recently viewed products.
+
+## IMPROVEMENT
+- Suggest
+  - Add `hide-delay` attribute to `ff-suggest` to allow configuration of the time it takes Suggest's popup to close. Use it when your users experience unreliable click behavior. Happens typically with input devices such as touchpads.
+  - `<a>` tags within `ff-suggest-item` elements now behave "natively" on Ctrl-click etc.
+- Hit highlighting
+  - Introduced new formatter `ff-hitHighlight` to be used in HTML templates of `ff-asn-group-element` and `ff-suggest-item`.
+  - New attribute `no-auto-highlight` on `ff-asn` and `ff-suggest`.
+    - These two elements add the highlighting markup to the underlying data.
+      This makes the data unusable for other purposes.
+      With `no-auto-highlight`, this no longer happens.
+      Instead, you specify `ff-hitHighlight` in the HTML templates yourself wherever you need it.
+      Example: `<ff-suggest-item type="productName">{{{ff-hitHighlight name}}}</ff-suggest-item>`.
+    - We recommend to adjust your integration to use `no-auto-highlight` as this behavior will become the default in a future release.
+
+## FIX
+- Suggest
+  - Popup closes before click event is registered. Especially noticeable on touchpads.
+- `ff-asn`
+  - Default template of `ff-asn-group-element` correctly renders hit highlighting.
+- Predictive Basket
+  - Cart and checkout tracking threw an error.
+
+
 # 5.1.8
 ## FIX
 - Suggest
