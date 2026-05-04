@@ -1,3 +1,8 @@
+# 5.2.1
+## IMPROVEMENT
+- Add new REST API parameter `showHitSource` to `SearchControlParams`.
+
+
 # 5.2.0
 ## FEATURE
 - Recently Viewed Products
