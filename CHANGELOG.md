@@ -1,3 +1,14 @@
+# 5.3.0
+## FEATURE
+- Atlas AI
+  - Web Components can now create and store the dedicated Atlas AI user ID automatically when the new app config parameter `useAtlasAi` is set to `true`.
+
+## FIX
+- `ff-checkout-tracking`
+  - Records request now respects the `channel` attribute on individual `ff-checkout-tracking-item` elements instead of always using the global channel.
+  - Price from the records response is now correctly applied when the `price` attribute is not set on the tracking item.
+
+
 # 5.2.1
 ## IMPROVEMENT
 - Add new REST API parameter `showHitSource` to `SearchControlParams`.
