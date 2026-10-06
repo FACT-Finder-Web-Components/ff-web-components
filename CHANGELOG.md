@@ -1,3 +1,9 @@
+# 4.3.1
+## FIX
+- `ff-slider`
+  - Fix floating point error in slider inputs.
+
+
 # 4.3.0
 ## ADD
 - Auto-fetch
