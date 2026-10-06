@@ -1,3 +1,9 @@
+# 5.3.1
+## FIX
+- `ff-slider`
+  - Fix floating point error in slider inputs.
+
+
 # 5.3.0
 ## FEATURE
 - Atlas AI
