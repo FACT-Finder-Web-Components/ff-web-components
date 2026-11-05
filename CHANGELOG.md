@@ -1,3 +1,11 @@
+# 5.3.2
+## FIX
+- Tracking with partially defined field roles threw an error.
+
+## IMPROVEMENT
+- Add new REST API parameter `exactMatchingScope` to `SearchParams` and `SuggestParams`.
+
+
 # 5.3.1
 ## FIX
 - `ff-slider`
